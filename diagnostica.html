@@ -17,23 +17,30 @@
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			
-			/* Стили меню: Белый цвет, Roboto, без капса */
+			/* БЕЗУСЛОВНОЕ ОТОБРАЖЕНИЕ ИЗОБРАЖЕНИЙ БЕЗ ИСКАЖЕНИЯ САЙТА */
+			img { max-width: 100% !important; height: auto !important; display: block; }
+			
+			.image.featured { width: 100% !important; margin: 0 0 2em 0 !important; left: 0 !important; }
+			
+			.image.left { 
+				float: left !important; 
+				width: 350px !important; /* Фиксированная ширина предотвращает сужение сайта */
+				max-width: 40% !important; 
+				margin: 0 2em 1.5em 0 !important; 
+			}
+			
+			.image.fit { width: 100% !important; margin: 2em 0 !important; }
+
+			/* Стили меню */
 			#nav > ul > li > a { 
 				font-family: 'Roboto', sans-serif !important;
 				text-transform: none !important; 
 				font-weight: 500 !important;
 				letter-spacing: 0 !important;
 			}
-			#header.alt #nav > ul > li > a {
-				color: #fff !important;
-			}
+			#header.alt #nav > ul > li > a { color: #fff !important; }
 			
-			/* Выпадающее меню: Безопасный перенос текста и ширина */
-			.dropotron {
-				min-width: 15em !important;
-				max-width: 20em !important;
-				padding: 0.5em 0 !important;
-			}
+			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
 			.dropotron li a { 
 				text-transform: none !important; 
 				color: #000 !important; 
@@ -43,8 +50,10 @@
 				padding: 0.6em 1.2em !important;
 				background: #fff !important;
 			}
-			.dropotron li:hover > a {
-				background: #f4f4f4 !important;
+			.dropotron li:hover > a { background: #f4f4f4 !important; }
+
+			@media screen and (max-width: 736px) {
+				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
 			}
 		</style>
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -62,7 +71,6 @@
 		fbq('track', 'PageView');
 		</script>
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
-		<!-- End Facebook Pixel Code -->
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
 	<body class="is-preload">
@@ -92,7 +100,7 @@
 					</nav>
 				</header>
 
-			<!-- Banner (НЕ ТРОГАЕМ) -->
+			<!-- Banner -->
 				<section id="banner" style="padding: 6em 15px; background-image: url('images/banner2.webp');">
 					<h1 style="font-size: 2em; text-transform: none; font-weight: bold; color: #fff !important; line-height: 1.2;">Диагностика и ремонт</h1>
 					<p style="font-size: 1.2em; text-transform: none; font-weight: bold; line-height: 1.3;">Поиск и устранение любых неисправностей электросети</p>
@@ -106,7 +114,6 @@
 							<p style="font-size: 1.2em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Проблемы с электричеством всегда случаются неожиданно. Мы предлагаем профессиональный поиск неисправностей и оперативный ремонт электрики в квартирах, домах и коммерческих помещениях по всей Валенсии и региону</p>
 						</header>
 
-						<!-- МЕСТО ДЛЯ ФОТО №1 -->
 						<span class="image featured"><img src="images/diagnostica_1.webp" alt="Диагностика электрики в Валенсии" /></span>
 
 						<div style="font-size: 1.3em; color: #000; line-height: 1.6; margin-bottom: 3em;">
@@ -124,7 +131,6 @@
 						<div style="font-size: 1.3em; color: #000; line-height: 1.6; margin-bottom: 3em;">
 							<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Как мы работаем: точность и безопасность</h3>
 							
-							<!-- МЕСТО ДЛЯ ФОТО №2 -->
 							<span class="image left"><img src="images/diagnostica_2.webp" alt="Процесс поиска неисправности" loading="lazy" /></span>
 							
 							<p>Мы используем современное измерительное оборудование для точного определения причин сбоев. Все работы выполняются строго по испанским стандартам <strong>REBT</strong> (Reglamento Electrotécnico para Baja Tensión)</p>
@@ -141,7 +147,6 @@
 							<p>Не ждите, пока маленькая неисправность превратится в серьезную проблему. Опишите симптомы в WhatsApp или позвоните нам прямо сейчас. Мастер проконсультирует вас и приедет в удобное время</p>
 						</div>
 
-						<!-- МЕСТО ДЛЯ ФОТО №3 -->
 						<span class="image fit" style="margin-top: 2em;"><img src="images/diagnostica_3.webp" alt="Результат ремонта электропроводки" loading="lazy" /></span>
 
 					</section>
@@ -167,7 +172,7 @@
 						<li>&copy; AmperioR. Todos los derechos reservados.</li>
 						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #888 !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center;">
 							<strong>Protección de Datos / Защита данных:</strong><br />
-							De conformidad con el RGPD y la LOPDGDD, le informamos que AmperioR trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
+							De conformidad con el RGPD и la LOPDGDD, le informamos que AmperioR trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
 							<span style="display: inline-block; margin-top: 0.5em;">
 							В соответствии с RGPD, сообщаем, что AmperioR обрабатывает ваши данные для обработки заявок. Основанием является ваше согласие при обращении. Данные не передаются третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами.
 							</span>
@@ -184,7 +189,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<a href="https://wa.me/34624638089" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
-			<span clas="icon brands fa-whatsapp"></span>
+			<span class="icon brands fa-whatsapp"></span>
 		</a>
 	</body>
 </html>
