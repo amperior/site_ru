@@ -17,13 +17,13 @@
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			
-			/* ИСПРАВЛЕНИЕ ШИРИНЫ ПОЛОТНА САЙТА */
+			/* 1. БЕЗУСЛОВНОЕ РАСШИРЕНИЕ ПОЛОТНА САЙТА */
 			.container {
 				width: 95% !important;
 				max-width: 1200px !important;
 			}
 
-			/* БЕЗУСЛОВНАЯ КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ С ОБТЕКАНИЕМ */
+			/* 2. БЕЗУСЛОВНАЯ КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
 			img { max-width: 100% !important; height: auto !important; display: block; }
 			
 			.image.left { 
@@ -33,8 +33,12 @@
 				margin: 0.5em 2em 1.5em 0 !important; 
 			}
 
-			/* Сброс обтекания для предотвращения наложения блоков */
-			.content-section { clear: both; overflow: hidden; margin-bottom: 3em; }
+			/* 3. РЕШЕНИЕ ПРОБЛЕМЫ "ЗАТЕКАНИЯ" ТЕКСТА (BFC) */
+			.text-wrapper { 
+				display: block !important;
+				overflow: hidden !important; /* Создает независимый блок текста справа от фото */
+				zoom: 1; /* Для старых браузеров */
+			}
 
 			/* Стили меню */
 			#nav > ul > li > a { 
@@ -44,7 +48,6 @@
 				font-weight: 500 !important;
 				letter-spacing: 0 !important;
 			}
-			
 			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
 			.dropotron li a { 
 				text-transform: none !important; 
@@ -105,8 +108,8 @@
 					</nav>
 				</header>
 
-			<!-- Banner -->
-				<section id="banner" style="padding: 6em 15px; background-image: url('images/banner2.webp');">
+			<!-- Banner (ИСПРАВЛЕНО: БЕЗ ДУБЛИРОВАНИЯ) -->
+				<section id="banner" style="padding: 6em 15px; background: url('images/banner2.webp') center/cover no-repeat !important;">
 					<h1 style="font-size: 2em; text-transform: none; font-weight: bold; color: #fff !important; line-height: 1.2;">Диагностика и ремонт</h1>
 					<p style="font-size: 1.2em; text-transform: none; font-weight: bold; line-height: 1.3;">Поиск и устранение любых неисправностей электросети</p>
 				</section>
@@ -115,86 +118,29 @@
 				<section id="main" class="container">
 					<section class="box" style="text-align: left; padding: 3em 2em;">
 						
-						<header style="margin-bottom: 2em;">
-							<h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Диагностика и ремонт электропроводки в Валенсии</h2>
-							<p style="font-size: 1.2em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Проблемы с электричеством всегда случаются неожиданно. Мы предлагаем профессиональный поиск неисправностей и оперативный ремонт электрики в квартирах, домах и коммерческих помещениях по всей Валенсии и региону</p>
+						<header style="margin-bottom: 3em;">
+							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Диагностика и ремонт электропроводки в Валенсии</h2>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Проблемы с электричеством всегда случаются неожиданно. Мы предлагаем профессиональный поиск неисправностей и оперативный ремонт электрики в квартирах, домах и коммерческих помещениях по всей Валенсии и региону</p>
 						</header>
 
 						<!-- БЛОК 1 -->
-						<div class="content-section">
+						<div style="clear: both; margin-bottom: 4em;">
 							<span class="image left"><img src="images/diagnostica_1.webp" alt="Диагностика электрики в Валенсии" /></span>
-							<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Когда стоит вызвать мастера?</h3>
-							<p style="font-size: 1.2em; color: #000;">Часто причина поломки скрыта глубоко в стенах или внутри щита. Мы поможем вам, если:</p>
-							<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
-								<li style="margin-bottom: 10px;">Постоянно выбивает автоматы или УЗО</li>
-								<li style="margin-bottom: 10px;">Произошло короткое замыкание</li>
-								<li style="margin-bottom: 10px;">Искрят розетки или чувствуется запах гари</li>
-								<li style="margin-bottom: 10px;">Пропал свет в части комнат</li>
-								<li style="margin-bottom: 10px;">Корпус бытовой техники «бьется током»</li>
-							</ul>
+							<div class="text-wrapper">
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Когда стоит вызвать мастера?</h3>
+								<p style="font-size: 1.2em; color: #000;">Часто причина поломки скрыта глубоко в стенах или внутри щита. Мы поможем вам, если:</p>
+								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
+									<li style="margin-bottom: 10px;">Постоянно выбивает автоматы или УЗО</li>
+									<li style="margin-bottom: 10px;">Произошло короткое замыкание</li>
+									<li style="margin-bottom: 10px;">Искрят розетки или чувствуется запах гари</li>
+									<li style="margin-bottom: 10px;">Пропал свет в части комнат</li>
+									<li style="margin-bottom: 10px;">Корпус бытовой техники «бьется током»</li>
+								</ul>
+							</div>
 						</div>
 
 						<!-- БЛОК 2 -->
-						<div class="content-section">
+						<div style="clear: both; margin-bottom: 4em;">
 							<span class="image left"><img src="images/diagnostica_2.webp" alt="Процесс поиска неисправности" loading="lazy" /></span>
-							<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Как мы работаем: точность и безопасность</h3>
-							<p style="font-size: 1.2em; color: #000;">Мы используем современное оборудование для точного определения причин неполадок. Все работы выполняются по стандартам <strong>REBT</strong> (Reglamento Electrotécnico para Baja Tensión)</p>
-							<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-								<li style="margin-bottom: 10px;">Поиск скрытых утечек тока</li>
-								<li style="margin-bottom: 10px;">Ремонт и замена поврежденных участков кабеля</li>
-								<li style="margin-bottom: 10px;">Восстановление работы розеток и освещения</li>
-								<li style="margin-bottom: 10px;">Проверка целостности контура заземления</li>
-							</ul>
-						</div>
-
-						<!-- БЛОК 3 -->
-						<div class="content-section" style="margin-bottom: 0;">
-							<span class="image left"><img src="images/diagnostica_3.webp" alt="Результат ремонта электропроводки" loading="lazy" /></span>
-							<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Срочный ремонт электрики</h3>
-							<p style="font-size: 1.2em; color: #000;">Не ждите, пока маленькая неисправность превратится в серьезную проблему. Опишите симптомы в WhatsApp или позвоните нам прямо сейчас. Мастер проконсультирует вас и приедет в удобное время</p>
-						</div>
-
-					</section>
-				</section>
-
-			<!-- CTA -->
-				<section id="cta" style="padding: 4em 0; background: #e89980;">
-					<h2 style="text-transform: none; color: #fff !important;">Нужна консультация специалиста?</h2>
-					<ul class="actions special">
-						<li><a href="tel:+34624638089" class="button">Позвонить</a></li>
-						<li><a href="https://wa.me/34624638089" class="button">WhatsApp</a></li>
-					</ul>
-				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
-					</ul>
-					<ul class="copyright" style="list-style: none; padding: 0;">
-						<li>&copy; AmperioR. Todos los derechos reservados.</li>
-						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #888 !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center;">
-							<strong>Protección de Datos / Защита данных:</strong><br />
-							De conformidad con el RGPD y la LOPDGDD, le informamos que AmperioR trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
-							<span style="display: inline-block; margin-top: 0.5em;">
-							В соответствии с RGPD, сообщаем, что AmperioR обрабатывает ваши данные для обработки заявок. Основанием является ваше согласие при обращении. Данные не передаются третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами.
-							</span>
-						</li>
-					</ul>
-				</footer>
-
-		</div>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<a href="https://wa.me/34624638089" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
-			<span class="icon brands fa-whatsapp"></span>
-		</a>
-	</body>
-</html>
+							<div class="text-wrapper">
+								<h3 style="text-transform: none; font-weight: 50
