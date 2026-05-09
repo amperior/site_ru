@@ -17,26 +17,32 @@
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			
-			/* 1. РАСШИРЕНИЕ ПОЛОТНА САЙТА */
+			/* РАСШИРЕНИЕ ПОЛОТНА САЙТА */
 			.container {
 				width: 95% !important;
 				max-width: 1200px !important;
 			}
 
-			/* 2. КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
+			/* КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
 			img { max-width: 100% !important; height: auto !important; display: block; }
 			
 			.image.left { 
 				float: left !important; 
 				width: 350px !important; 
 				max-width: 45% !important; 
-				margin: 0.5em 2em 1.5em 0 !important; 
+				margin: 0.5em 2em 1em 0 !important; 
 			}
 
-			/* 3. ФИКС ЗАТЕКАНИЯ ТЕКСТА (BFC) */
+			/* ФИКС ЗАТЕКАНИЯ ТЕКСТА */
 			.text-wrapper { 
 				overflow: hidden !important; 
 				display: block !important;
+			}
+
+			/* УМЕНЬШЕННЫЕ ОТСТУПЫ МЕЖДУ БЛОКАМИ */
+			.content-block { 
+				clear: both !important; 
+				margin-bottom: 2em !important; 
 			}
 
 			/* Стили меню */
@@ -60,7 +66,7 @@
 			.dropotron li:hover > a { background: #f4f4f4 !important; }
 
 			@media screen and (max-width: 736px) {
-				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 1.5em 0 !important; }
 			}
 		</style>
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -107,7 +113,7 @@
 					</nav>
 				</header>
 
-			<!-- Banner (ФИКС ДВОЙНОГО ИЗОБРАЖЕНИЯ) -->
+			<!-- Banner -->
 				<section id="banner" style="padding: 6em 15px; background: url('images/banner2.webp') center/cover no-repeat !important;">
 					<h1 style="font-size: 2em; text-transform: none; font-weight: bold; color: #fff !important; line-height: 1.2;">Диагностика и ремонт</h1>
 					<p style="font-size: 1.2em; text-transform: none; font-weight: bold; line-height: 1.3;">Поиск и устранение любых неисправностей электросети</p>
@@ -117,17 +123,16 @@
 				<section id="main" class="container">
 					<section class="box" style="text-align: left; padding: 3em 2em;">
 						
-						<header style="margin-bottom: 3em;">
+						<header style="margin-bottom: 2em;">
 							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Диагностика и ремонт электропроводки в Валенсии</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Проблемы с электричеством всегда случаются неожиданно. Мы предлагаем профессиональный поиск неисправностей и оперативный ремонт электрики в квартирах, домах и коммерческих помещениях по всей Валенсии и региону</p>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Закажите профессиональный поиск неисправностей и оперативный ремонт электрики в квартирах, домах и коммерческих помещениях в Валенсии и регионе</p>
 						</header>
 
 						<!-- БЛОК 1 -->
-						<div style="clear: both; margin-bottom: 4em;">
+						<div class="content-block">
 							<span class="image left"><img src="images/diagnostica_1.webp" alt="Диагностика электрики в Валенсии" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Когда стоит вызвать мастера?</h3>
-								<p style="font-size: 1.2em; color: #000;">Часто причина поломки скрыта глубоко в стенах или внутри щита. Мы поможем вам, если:</p>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
 									<li style="margin-bottom: 10px;">Постоянно выбивает автоматы или УЗО</li>
 									<li style="margin-bottom: 10px;">Произошло короткое замыкание</li>
@@ -139,7 +144,7 @@
 						</div>
 
 						<!-- БЛОК 2 -->
-						<div style="clear: both; margin-bottom: 4em;">
+						<div class="content-block">
 							<span class="image left"><img src="images/diagnostica_2.webp" alt="Процесс поиска неисправности" loading="lazy" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Как мы работаем: точность и безопасность</h3>
@@ -154,7 +159,7 @@
 						</div>
 
 						<!-- БЛОК 3 -->
-						<div style="clear: both; margin-bottom: 0;">
+						<div class="content-block" style="margin-bottom: 0 !important;">
 							<span class="image left"><img src="images/diagnostica_3.webp" alt="Результат ремонта электропроводки" loading="lazy" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Срочный ремонт электрики</h3>
