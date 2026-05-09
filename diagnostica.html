@@ -17,16 +17,21 @@
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			
-			/* РАСШИРЕНИЕ ПОЛОТНА И УМЕНЬШЕНИЕ ЗАЗОРА */
+			/* ШИРИНА ПОЛОТНА И УМЕНЬШЕНИЕ ЗАЗОРА С БАННЕРОМ */
 			#main.container {
 				width: 95% !important;
 				max-width: 1200px !important;
-				padding-top: 1.5em !important; /* Зазор уменьшен на 25% */
+				padding-top: 1.5em !important;
+			}
+
+			/* ПОДНЯТИЕ КОНТЕНТА ВНУТРИ БЛОКА НА 10% */
+			.box {
+				text-align: left !important;
+				padding: 2.7em 2em 3em 2em !important;
 			}
 
 			/* КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
 			img { max-width: 100% !important; height: auto !important; display: block; }
-			
 			.image.left { 
 				float: left !important; 
 				width: 350px !important; 
@@ -35,16 +40,11 @@
 			}
 
 			/* ФИКС ЗАТЕКАНИЯ ТЕКСТА */
-			.text-wrapper { 
-				overflow: hidden !important; 
-				display: block !important;
-			}
+			.text-wrapper { overflow: hidden !important; display: block !important; }
 
-			/* ОТСТУПЫ МЕЖДУ БЛОКАМИ */
-			.content-block { 
-				clear: both !important; 
-				margin-bottom: 2em !important; 
-			}
+			/* ОТСТУПЫ МЕЖДУ БЛОКАМИ И ВНУТРИ НИХ */
+			.content-block { clear: both !important; margin-bottom: 2em !important; }
+			h3 { margin-bottom: 0.85em !important; } /* Уменьшено на 15% */
 
 			/* Стили меню */
 			#nav > ul > li > a { 
@@ -54,8 +54,6 @@
 				font-weight: 500 !important;
 				letter-spacing: 0 !important;
 			}
-			#header.alt #nav > ul > li > a { color: #fff !important; }
-			
 			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
 			.dropotron li a { 
 				text-transform: none !important; 
@@ -124,7 +122,7 @@
 
 			<!-- Main -->
 				<section id="main" class="container">
-					<section class="box" style="text-align: left; padding: 3em 2em;">
+					<section class="box">
 						
 						<header style="margin-bottom: 2em;">
 							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Диагностика и ремонт электропроводки в Валенсии</h2>
@@ -135,7 +133,7 @@
 						<div class="content-block">
 							<span class="image left"><img src="images/diagnostica_1.webp" alt="Диагностика электрики в Валенсии" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Когда стоит вызвать мастера?</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Когда стоит вызвать мастера?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
 									<li style="margin-bottom: 10px;">Постоянно выбивает автоматы или УЗО</li>
 									<li style="margin-bottom: 10px;">Искрят розетки или чувствуется запах гари</li>
@@ -149,7 +147,7 @@
 						<div class="content-block">
 							<span class="image left"><img src="images/diagnostica_2.webp" alt="Процесс поиска неисправности" loading="lazy" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Как мы работаем: точность и безопасность</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Как мы работаем: точность и безопасность</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
 									<li style="margin-bottom: 10px;">Поиск скрытых утечек тока</li>
 									<li style="margin-bottom: 10px;">Ремонт и замена поврежденных участков кабеля</li>
@@ -163,7 +161,7 @@
 						<div class="content-block" style="margin-bottom: 0 !important;">
 							<span class="image left"><img src="images/diagnostica_3.webp" alt="Результат ремонта электропроводки" loading="lazy" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important; margin-bottom: 1em;">Срочный ремонт электрики</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Срочный ремонт электрики</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
 									Мы используем современное оборудование для точного определения причин неполадок. Все работы выполняются по стандартам <strong>REBT</strong> (Reglamento Electrotécnico para Baja Tensión)<br />
 									Не ждите, пока маленькая неисправность превратится в серьезную проблему<br />
@@ -177,6 +175,7 @@
 
 			<!-- CTA -->
 				<section id="cta" style="padding: 4em 0; background: #e89980;">
+					<h2 style="text-transform: none; color: #fff !important;">Нужна консультация специалиста?</h2>
 					<ul class="actions special">
 						<li><a href="tel:+34624638089" class="button">Позвонить</a></li>
 						<li><a href="https://wa.me/34624638089" class="button">WhatsApp</a></li>
@@ -194,7 +193,7 @@
 						<li>&copy; AmperioR. Todos los derechos reservados.</li>
 						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #888 !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center;">
 							<strong>Protección de Datos / Защита данных:</strong><br />
-							De conformidad con el RGPD и la LOPDGDD, le informamos что AmperioR trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
+							De conformidad con el RGPD y la LOPDGDD, le informamos que AmperioR trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
 							<span style="display: inline-block; margin-top: 0.5em;">
 							В соответствии с RGPD, сообщаем, что AmperioR обрабатывает ваши данные для обработки заявок. Основанием является ваше согласие при обращении. Данные не передаются третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами.
 							</span>
