@@ -13,45 +13,53 @@
 		<meta name="description" content="Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов и установка солнечных панелей по нормам REBT." />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
-		<style>
-			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
-			#header { background-color: rgb(23, 78, 98) !important; }
-            #header.alt { background-color: transparent !important; }
-			
-			/* Гарантированное изменение цвета и размера иконок */
-            #main .icon.solid:before {
-            color: rgb(23, 78, 98) !important;
-            font-size: 0.9em !important;
-            }
-			
-			/* Стили меню: Белый цвет, Roboto, без капса */
-			#nav > ul > li > a { 
-				color: #fff !important; 
-				font-family: 'Roboto', sans-serif !important;
-				text-transform: none !important; 
-				font-weight: 500 !important;
-				letter-spacing: 0 !important;
-			}
-			
-			/* Выпадающее меню: Безопасный перенос текста и ширина */
-			.dropotron {
-				min-width: 15em !important;
-				max-width: 20em !important;
-				padding: 0.5em 0 !important;
-			}
-			.dropotron li a { 
-				text-transform: none !important; 
-				color: #000 !important; 
-				font-family: 'Roboto', sans-serif !important;
-				white-space: normal !important;
-				line-height: 1.3em !important;
-				padding: 0.6em 1.2em !important;
-				background: #fff !important;
-			}
-			.dropotron li:hover > a {
-				background: #f4f4f4 !important;
-			}
-		</style>
+<style>
+    body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
+    #header { background-color: rgb(23, 78, 98) !important; }
+    #header.alt { background-color: transparent !important; }
+
+    /* Выравнивание иконок во всех раскрывающихся блоках (Услуги и Преимущества) */
+    #main div[onclick] i.icon.solid {
+        display: inline-block !important;
+        width: 40px !important;
+        text-align: center !important;
+        margin-right: 10px !important;
+    }
+
+    /* Цвет и размер иконок */
+    #main .icon.solid:before {
+        color: rgb(23, 78, 98) !important;
+        font-size: 0.9em !important;
+    }
+
+    /* Стили меню: Белый цвет, Roboto, без капса */
+    #nav > ul > li > a { 
+        color: #fff !important; 
+        font-family: 'Roboto', sans-serif !important;
+        text-transform: none !important; 
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Выпадающее меню: Безопасный перенос текста и ширина */
+    .dropotron {
+        min-width: 15em !important;
+        max-width: 20em !important;
+        padding: 0.5em 0 !important;
+    }
+    .dropotron li a { 
+        text-transform: none !important; 
+        color: #000 !important; 
+        font-family: 'Roboto', sans-serif !important;
+        white-space: normal !important;
+        line-height: 1.3em !important;
+        padding: 0.6em 1.2em !important;
+        background: #fff !important;
+    }
+    .dropotron li:hover > a {
+        background: #f4f4f4 !important;
+    }
+</style>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- Facebook Pixel Code -->
 		<script>
