@@ -16,55 +16,29 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
-			#header { background-color: rgb(23, 78, 98) !important; }
 			
-			/* РАСШИРЕНИЕ ПОЛОТНА И УМЕНЬШЕНИЕ ЗАЗОРА */
-			#main.container {
-				width: 95% !important;
-				max-width: 1200px !important;
-				padding-top: 1.5em !important;
-			}
+			/* ЛОГИКА ШАПКИ: ПРОЗРАЧНОСТЬ И ЦВЕТ */
+			#header { background-color: rgb(23, 78, 98) !important; }
+			#header.alt { background-color: transparent !important; box-shadow: none !important; }
+			
+			/* ИСПРАВЛЕНИЕ ШИРИНЫ И ОТМЕНА НАЕЗДА КОНТЕНТА */
+			.container { width: 95% !important; max-width: 1200px !important; }
+			body.landing #main { margin-top: 0 !important; padding-top: 1.5em !important; }
 
 			/* ПОДНЯТИЕ КОНТЕНТА ВНУТРИ БЛОКА */
-			.box {
-				text-align: left !important;
-				padding: 2.7em 2em 3em 2em !important;
-			}
+			.box { text-align: left !important; padding: 2.7em 2em 3em 2em !important; }
 
 			/* КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
 			img { max-width: 100% !important; height: auto !important; display: block; }
-			.image.left { 
-				float: left !important; 
-				width: 350px !important; 
-				max-width: 45% !important; 
-				margin: 0.5em 2em 1.5em 0 !important; 
-			}
-
-			/* ФИКС ЗАТЕКАНИЯ ТЕКСТА */
+			.image.left { float: left !important; width: 350px !important; max-width: 45% !important; margin: 0.5em 2em 1.5em 0 !important; }
 			.text-wrapper { overflow: hidden !important; display: block !important; }
-
-			/* ОТСТУПЫ МЕЖДУ БЛОКАМИ И ВНУТРИ НИХ */
 			.content-block { clear: both !important; margin-bottom: 2em !important; }
 			h3 { margin-bottom: 0.85em !important; }
 
-			/* Стили меню: Белый цвет, Roboto, без капса */
-			#nav > ul > li > a { 
-				color: #fff !important;
-				font-family: 'Roboto', sans-serif !important;
-				text-transform: none !important; 
-				font-weight: 500 !important;
-				letter-spacing: 0 !important;
-			}
+			/* Стили меню */
+			#nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
 			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
-			.dropotron li a { 
-				text-transform: none !important; 
-				color: #000 !important; 
-				font-family: 'Roboto', sans-serif !important;
-				white-space: normal !important;
-				line-height: 1.3em !important;
-				padding: 0.6em 1.2em !important;
-				background: #fff !important;
-			}
+			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
 			.dropotron li:hover > a { background: #f4f4f4 !important; }
 
 			@media screen and (max-width: 736px) {
@@ -88,11 +62,11 @@
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
-	<body class="is-preload">
+	<body class="landing is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
+				<header id="header" class="alt">
 					<span class="logo"><a href="index.html">AmperioR.es</a></span>
 					<nav id="nav">
 						<ul>
@@ -116,7 +90,7 @@
 				</header>
 
 			<!-- Banner -->
-				<section id="banner" style="padding: 6em 15px; background: url('images/banner3.webp') center/cover no-repeat !important;">
+				<section id="banner" style="padding: 6em 15px; background: url('images/cableado_bg.webp') center/cover no-repeat !important;">
 					<h1 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Электропроводка</h1>
 					<p style="font-size: 1.3em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Планирование и монтаж кабельных линий любой сложности</p>
 				</section>
@@ -176,7 +150,6 @@
 
 			<!-- CTA + Footer Wrapper -->
 			<div style="background: url('images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
-				<!-- CTA -->
 				<section id="cta" style="background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important;">
 					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">Нужна консультация специалиста?</h2>
 					<ul class="actions special">
@@ -185,7 +158,6 @@
 					</ul>
 				</section>
 
-				<!-- Footer -->
 				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
 					<ul class="icons">
 						<li><a href="#" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
