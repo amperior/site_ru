@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Испанская версия (Корень) -->
+  <url><loc>https://amperior.es/index.html</loc></url>
+  <url><loc>https://amperior.es/diagnostica.html</loc></url>
+  <url><loc>https://amperior.es/cuadros.html</loc></url>
+  <url><loc>https://amperior.es/cableado.html</loc></url>
+  <url><loc>https://amperior.es/locales.html</loc></url>
+  <url><loc>https://amperior.es/conexion.html</loc></url>
+  <url><loc>https://amperior.es/potencia.html</loc></url>
+  <url><loc>https://amperior.es/solar.html</loc></url>
+  <url><loc>https://amperior.es/boletin.html</loc></url>
+
+  <!-- Русская версия (Папка /ru/) -->
+  <url><loc>https://amperior.es/ru/index.html</loc></url>
+  <url><loc>https://amperior.es/ru/diagnostica.html</loc></url>
+  <url><loc>https://amperior.es/ru/cuadros.html</loc></url>
+  <url><loc>https://amperior.es/ru/cableado.html</loc></url>
+  <url><loc>https://amperior.es/ru/locales.html</loc></url>
+  <url><loc>https://amperior.es/ru/conexion.html</loc></url>
+  <url><loc>https://amperior.es/ru/potencia.html</loc></url>
+  <url><loc>https://amperior.es/ru/solar.html</loc></url>
+  <url><loc>https://amperior.es/ru/boletin.html</loc></url>
+</urlset>
