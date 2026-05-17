@@ -4,11 +4,7 @@
 -->
 <html lang="ru">
 	<head>
-		<!-- SEO: Title и Canonical (Добавлено) -->
-		<title>Электрик в Валенсии | Профессиональный электромонтаж | AmperioR</title>
-		<link rel="canonical" href="https://amperior.es/ru/index.html" />
-
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
@@ -19,85 +15,59 @@
 		<meta name="description" content="Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов и установка солнечных панелей по нормам REBT." />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
-		<!-- Open Graph для красивых ссылок в соцсетях и мессенджерах (Добавлено) -->
-		<meta property="og:title" content="Электрик в Валенсии | AmperioR" />
-		<meta property="og:description" content="Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов и установка солнечных панелей по нормам REBT." />
-		<meta property="og:image" content="https://amperior.es/images/pic01.webp" />
-		<meta property="og:url" content="https://amperior.es/ru/index.html" />
-		<meta property="og:type" content="website" />
-
 		<!-- SEO: hreflang -->
 		<link rel="alternate" hreflang="es" href="https://amperior.es/index.html" />
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/index.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/index.html" />
 
-		<!-- Предзагрузка шрифтов для скорости (Добавлено) -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
-
 <style>
-    /* Базовые стили шаблона */
     body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
     #header { background-color: rgb(23, 78, 98) !important; }
     #header.alt { background-color: transparent !important; }
 
-    #main div[onclick] i.icon.solid { display: inline-block !important; width: 40px !important; text-align: center !important; margin-right: 10px !important; }
-    #main .icon.solid:before { color: rgb(23, 78, 98) !important; font-size: 0.9em !important; }
+    /* Выравнивание иконок во всех раскрывающихся блоках (Услуги и Преимущества) */
+    #main div[onclick] i.icon.solid {
+        display: inline-block !important;
+        width: 40px !important;
+        text-align: center !important;
+        margin-right: 10px !important;
+    }
 
-    #nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
-    .dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
-    .dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
-    .dropotron li:hover > a { background: #f4f4f4 !important; }
+    /* Цвет и размер иконок */
+    #main .icon.solid:before {
+        color: rgb(23, 78, 98) !important;
+        font-size: 0.9em !important;
+    }
 
-	/* --- НОВЫЕ БЕЗОПАСНЫЕ КЛАССЫ (Замена inline-стилей) --- */
-	
-	/* Баннер */
-	.amp-banner-h1 { margin-top: 180px; font-size: 2.5em; text-transform: none; font-weight: bold; color: #fff !important; }
-	.amp-banner-p { font-size: 2em; text-transform: none; font-weight: bold; line-height: 1.3 !important; }
-	.amp-banner-btn { height: 3.5em; line-height: 3.5em; padding: 0 2em; font-size: 1.3em; color: #000 !important; }
-	
-	/* Заголовки секций */
-	.amp-section-h2 { font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important; }
-	
-	/* Аккордеоны (Услуги и Преимущества) */
-	.amp-accordion-section { background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 2em; }
-	.amp-accordion-section.adv { margin-bottom: 4em; }
-	.amp-accordion-container { display: flex; flex-direction: column; gap: 15px; width: 100%; }
-	.amp-accordion-item { cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box; }
-	.amp-accordion-header { margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important; }
-	.amp-accordion-icon { color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px; }
-	.amp-accordion-arrow { font-size: 0.8em; color: #000; }
-	.amp-accordion-content { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; }
-	.amp-accordion-link { display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500; }
-	
-	/* Карточки (Жилые и Коммерческие) */
-	.amp-card-section { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important; }
-	.amp-card-img { margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important; }
-	.amp-card-body { padding: 25px; }
-	.amp-card-h3 { font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px; }
-	.amp-card-p { font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; margin-bottom: 20px; }
-	.amp-card-btn { color: #000 !important; border-color: #ddd !important; text-transform: none !important; }
-	
-	/* Подвал и CTA */
-	.amp-bottom-wrapper { background: url('../images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important; }
-	.amp-cta-section { background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important; }
-	.amp-cta-h2 { font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em; }
-	.amp-cta-btn { background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important; }
-	
-	.amp-footer-section { background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important; }
-	.amp-footer-social-fb { color: #1877F2 !important; opacity: 1 !important; }
-	.amp-footer-social-ig { color: #E1306C !important; opacity: 1 !important; }
-	.amp-footer-social-wa { color: #25D366 !important; opacity: 1 !important; }
-	.amp-footer-copy { list-style: none; padding: 0; color: #fff !important; }
-	.amp-footer-legal { display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #fff !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-left: none !important; padding-left: 0 !important; }
-	.amp-footer-legal strong { color: #fff !important; }
-	.amp-footer-legal span { display: inline-block; margin-top: 0.5em; color: #fff !important; }
-	
-	/* Плавающая кнопка WhatsApp */
-	.amp-wa-float { position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+    /* Стили меню: Белый цвет, Roboto, без капса */
+    #nav > ul > li > a { 
+        color: #fff !important; 
+        font-family: 'Roboto', sans-serif !important;
+        text-transform: none !important; 
+        font-weight: 500 !important;
+        letter-spacing: 0 !important;
+    }
+
+    /* Выпадающее меню: Безопасный перенос текста и ширина */
+    .dropotron {
+        min-width: 15em !important;
+        max-width: 20em !important;
+        padding: 0.5em 0 !important;
+    }
+    .dropotron li a { 
+        text-transform: none !important; 
+        color: #000 !important; 
+        font-family: 'Roboto', sans-serif !important;
+        white-space: normal !important;
+        line-height: 1.3em !important;
+        padding: 0.6em 1.2em !important;
+        background: #fff !important;
+    }
+    .dropotron li:hover > a {
+        background: #f4f4f4 !important;
+    }
 </style>
-
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<!-- Facebook Pixel Code -->
 		<script>
@@ -146,10 +116,10 @@
 
 			<!-- Banner -->
 				<section id="banner">
-					<h1 class="amp-banner-h1">Электрик в Валенсии</h1>
-					<p class="amp-banner-p">Профессиональный электромонтаж <br /> и ремонт любой сложности</p>
+					<h1 style="margin-top: 180px; font-size: 2.5em; text-transform: none; font-weight: bold; color: #fff !important;">Электрик в Валенсии</h1>
+					<p style="font-size: 2em; text-transform: none; font-weight: bold; line-height: 1.3 !important;">Профессиональный электромонтаж <br /> и ремонт любой сложности</p>
 					<ul class="actions special">
-						<li><a href="tel:+34624638089" class="button primary amp-banner-btn">Позвонить мастеру</a></li>
+						<li><a href="tel:+34624638089" class="button primary" style="height: 3.5em; line-height: 3.5em; padding: 0 2em; font-size: 1.3em; color: #000 !important;">Позвонить мастеру</a></li>
 					</ul>
 				</section>
 
@@ -158,118 +128,111 @@
 
 					<section class="box special">
 						<header class="major">
-							<h2 class="amp-section-h2">Услуги электрика высокого качества <br /> в Валенсии и регионе</h2>
+							<h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important;">Услуги электрика высокого качества <br /> в Валенсии и регионе</h2>
 						</header>
-						<!-- Добавлен loading="lazy" -->
-						<span class="image featured"><img src="../images/pic01.webp" alt="Электромонтаж в Валенсии" loading="lazy" /></span>
+						<span class="image featured"><img src="../images/pic01.webp" alt="Электромонтаж в Валенсии" /></span>
 					</section>
 
-					<!-- Блок УСЛУГ -->
-					<section class="box special amp-accordion-section">
-						<div class="amp-accordion-container">
+<!-- Блок УСЛУГ -->
+					<section class="box special" style="background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 2em;">
+						<div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-house-user amp-accordion-icon"></i> Диагностика и ремонт</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-house-user" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Диагностика и ремонт</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Диагностика причин сработки УЗО, отключений электроэнергии, утечек тока и других неисправностей. Ремонт электропроводки любой сложности. <a href="diagnostica.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Диагностика причин сработки УЗО, отключений электроэнергии, утечек тока и других неисправностей. Ремонт электропроводки любой сложности. <a href="diagnostica.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-bolt amp-accordion-icon"></i> Монтаж электрощитов</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-bolt" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Монтаж электрощитов</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Расчёт, комплектация, сборка, монтаж и подключение электрических щитов под конкретные условия и потребности заказчика. <a href="cuadros.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Расчёт, комплектация, сборка, монтаж и подключение электрических щитов под конкретные условия и потребности заказчика. <a href="cuadros.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-plug amp-accordion-icon"></i> Электропроводка</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-plug" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Электропроводка</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Планирование и монтаж электропроводки в квартирах, домах и помещениях. Полная реконструкция старой проводки. <a href="cableado.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Планирование и монтаж электропроводки в квартирах, домах и помещениях. Полная реконструкция старой проводки. <a href="cableado.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-building amp-accordion-icon"></i> Электрика для бизнеса</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-building" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Электрика для бизнеса</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Электромонтажные работы в офисах, магазинах, складах, ресторанах, парикмахерских. <a href="locales.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Электромонтажные работы в офисах, магазинах, складах, ресторанах, парикмахерских. <a href="locales.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-power-off amp-accordion-icon"></i> Подключение к сети</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-power-off" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Подключение к сети</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Организация подключения к электросетям и ввод в эксплуатацию. Монтаж и замена питающих линий. <a href="conexion.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Организация подключения к электросетям и ввод в эксплуатацию. Монтаж и замена питающих линий. <a href="conexion.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-chart-line amp-accordion-icon"></i> Повышение мощности</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-chart-line" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Повышение мощности</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Запросы на повышение мощности в энергокомпанию. Сертификация Boletin Electrico. <a href="potencia.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Запросы на повышение мощности в энергокомпанию. Сертификация Boletin Electrico. <a href="potencia.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-solar-panel amp-accordion-icon"></i> Солнечные панели</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-solar-panel" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Солнечные панели</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Монтаж и обслуживание солнечных панелей. <a href="solar.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Монтаж и обслуживание солнечных панелей. <a href="solar.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-file-signature amp-accordion-icon"></i> Документы</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-file-signature" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Документы</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Подготовка документации и сопровождение прохождения инспекции OCA. <a href="boletin.html" class="amp-accordion-link">Узнать больше</a></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Подготовка документации и сопровождение прохождения инспекции OCA. <a href="boletin.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
 						</div>
 					</section>
 
-					<!-- Блок ПРЕИМУЩЕСТВ -->
-					<section class="box special amp-accordion-section adv">
+					<!-- Блок ПРЕИМУЩЕСТВ (Теперь тоже раскрывается) -->
+					<section class="box special" style="background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 4em;">
 						<header class="major" style="margin-bottom: 2.5em !important; margin-top: 1em !important;">
-							<h2 class="amp-section-h2">Наши преимущества</h2>
-						</header>
-						<div class="amp-accordion-container">
+    <h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important;">Наши преимущества</h2>
+</header>
+						<div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
 							
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-shield-alt amp-accordion-icon"></i> Стандарты REBT</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-shield-alt" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Стандарты REBT</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Работы осуществляются строго по нормам REBT — главному нормативному документу в Испании. 
-									<!-- <a href="#" class="amp-accordion-link">Узнать больше</a> -->
-								</p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Работы осуществляются строго по нормам REBT — главному нормативному документу в Испании. <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-euro-sign amp-accordion-icon"></i> Честная цена</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-euro-sign" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Честная цена</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Фиксированная смета до начала работ. 
-									<!-- <a href="#" class="amp-accordion-link">Узнать больше</a> -->
-								</p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Фиксированная смета до начала работ. <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
-							<div class="amp-accordion-item" tabindex="0">
-								<h3 class="amp-accordion-header">
-									<span><i class="icon solid fa-user-check amp-accordion-icon"></i> Профессионализм</span>
-									<span class="amp-accordion-arrow">▼</span>
+							<div style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;" onclick="const p = this.querySelector('p'); p.style.display = (p.style.display === 'none' ? 'block' : 'none');">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-user-check" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Профессионализм</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p class="amp-accordion-content">Профильное образование и большой опыт в области электрификации. 
-									<!-- <a href="#" class="amp-accordion-link">Узнать больше</a> -->
-								</p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Профильное образование и большой опыт в области электрификации. <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
 							</div>
 
 						</div>
@@ -278,31 +241,29 @@
 					<!-- БЛОК: ЖИЛЫЕ И КОММЕРЧЕСКИЕ ОБЪЕКТЫ -->
 					<div class="row">
 						<div class="col-6 col-12-narrower">
-							<section class="box special amp-card-section">
-								<!-- Добавлен loading="lazy" -->
-								<span class="image featured amp-card-img">
-									<img src="../images/pic02.webp" alt="Жилые объекты" loading="lazy" />
+							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
+								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
+									<img src="../images/pic02.webp" alt="Жилые объекты" />
 								</span>
-								<div class="amp-card-body">
-									<h3 class="amp-card-h3">Жилые объекты</h3>
-									<p class="amp-card-p">Полный комплекс электромонтажных работ для квартир и частных домов</p>
+								<div style="padding: 25px;">
+									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Жилые объекты</h3>
+									<p style="font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; margin-bottom: 20px;">Полный комплекс электромонтажных работ для квартир и частных домов</p>
 									<ul class="actions">
-										<li><a href="cableado.html" class="button alt amp-card-btn">Узнать больше</a></li>
+										<li><a href="cableado.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important;">Узнать больше</a></li>
 									</ul>
 								</div>
 							</section>
 						</div>
 						<div class="col-6 col-12-narrower">
-							<section class="box special amp-card-section">
-								<!-- Добавлен loading="lazy" -->
-								<span class="image featured amp-card-img">
-									<img src="../images/pic03.webp" alt="Коммерческие помещения" loading="lazy" />
+							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
+								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
+									<img src="../images/pic03.webp" alt="Коммерческие помещения" />
 								</span>
-								<div class="amp-card-body">
-									<h3 class="amp-card-h3">Коммерческие помещения</h3>
-									<p class="amp-card-p">Профессиональные решения для офисов, магазинов и ресторанов</p>
+								<div style="padding: 25px;">
+									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Коммерческие помещения</h3>
+									<p style="font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; margin-bottom: 20px;">Профессиональные решения для офисов, магазинов и ресторанов</p>
 									<ul class="actions">
-										<li><a href="locales.html" class="button alt amp-card-btn">Узнать больше</a></li>
+										<li><a href="locales.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important;">Узнать больше</a></li>
 									</ul>
 								</div>
 							</section>
@@ -312,29 +273,29 @@
 				</section>
 
 			<!-- CTA + Footer Wrapper -->
-			<div class="amp-bottom-wrapper">
+			<div style="background: url('../images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
 				<!-- CTA -->
-				<section id="cta" class="amp-cta-section">
-					<h2 class="amp-cta-h2">Нужна консультация специалиста?</h2>
+				<section id="cta" style="background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important;">
+					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">Нужна консультация специалиста?</h2>
 					<ul class="actions special">
-						<li><a href="tel:+34624638089" class="button amp-cta-btn">Позвонить</a></li>
-						<li><a href="https://wa.me/34624638089" class="button amp-cta-btn">WhatsApp</a></li>
+						<li><a href="tel:+34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">Позвонить</a></li>
+						<li><a href="https://wa.me/34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">WhatsApp</a></li>
 					</ul>
 				</section>
 
 				<!-- Footer -->
-				<footer id="footer" class="amp-footer-section">
+				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-facebook-f amp-footer-social-fb"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram amp-footer-social-ig"><span class="label">Instagram</span></a></li>
-						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp amp-footer-social-wa"><span class="label">WhatsApp</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
 					</ul>
-					<ul class="copyright amp-footer-copy">
+					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
 						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
-						<li class="amp-footer-legal">
-							<strong>Protección de Datos / Защита данных:</strong><br />
+						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #fff !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-left: none !important; padding-left: 0 !important;">
+							<strong style="color: #fff !important;">Protección de Datos / Защита данных:</strong><br />
 							De conformidad con el RGPD и la LOPDGDD, le informamos что AmperioR.es trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación и supresión contactándonos. <br />
-							<span>
+							<span style="display: inline-block; margin-top: 0.5em; color: #fff !important;">
 							В соответствии с RGPD, сообщаем, что AmperioR.es обрабатывает ваши данные для обработки заявок. Основанием является ваше согласие при обращении. Данные не передаются третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами
 							</span>
 						</li>
@@ -351,42 +312,8 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
 
-			<!-- Скрипт для аккордеонов (Заменяет 11 inline-скриптов) -->
-			<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					const accordions = document.querySelectorAll('.amp-accordion-item');
-					
-					accordions.forEach(function(item) {
-						// Открытие по клику
-						item.addEventListener('click', function() {
-							const content = this.querySelector('.amp-accordion-content');
-							if (content.style.display === 'none' || content.style.display === '') {
-								content.style.display = 'block';
-							} else {
-								content.style.display = 'none';
-							}
-						});
-
-						// Открытие с клавиатуры (Enter) для доступности
-						item.addEventListener('keypress', function(e) {
-							if (e.key === 'Enter') {
-								this.click();
-							}
-						});
-					});
-
-					// Блокировка закрытия аккордеона при клике на ссылку внутри него
-					const links = document.querySelectorAll('.amp-accordion-link');
-					links.forEach(function(link) {
-						link.addEventListener('click', function(e) {
-							e.stopPropagation();
-						});
-					});
-				});
-			</script>
-
-		<!-- WhatsApp Floating Button (Добавлен aria-label) -->
-			<a href="https://wa.me/34624638089" class="amp-wa-float" aria-label="Написать в WhatsApp" target="_blank">
+		<!-- WhatsApp Floating Button -->
+			<a href="https://wa.me/34624638089" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 				<span class="icon brands fa-whatsapp"></span>
 			</a>
 	</body>
