@@ -4,7 +4,20 @@
 -->
 <html lang="ru">
 	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<link rel="preload" as="image" href="../images/banner3.webp" fetchpriority="high" />
+
+		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<link rel="preload" as="font" href="../assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="../assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+
+		<!-- SEO: Title и Canonical -->
 		<title>Электромонтаж для коммерческих помещений в Валенсии | AmperioR.es</title>
+		<link rel="canonical" href="https://amperior.es/ru/locales.html" />
+
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
@@ -12,10 +25,7 @@
 		<link rel="shortcut icon" href="/favicon.ico?v=3">
 		<link rel="manifest" href="/site.webmanifest?v=3">
 		<meta name="theme-color" content="#174e62">
-		<meta charset="utf-8" />
 		<meta name="description" content="Профессиональные электромонтажные работы для магазинов, ресторанов и офисов (локалей) в Валенсии. Проектирование, монтаж, сертификация и подготовка к инспекции OCA." />
-		<link rel="canonical" href="https://amperior.es/ru/locales.html" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<!-- Open Graph для соцсетей и мессенджеров -->
 		<meta property="og:title" content="Электромонтаж для коммерческих помещений в Валенсии | AmperioR.es" />
@@ -29,10 +39,14 @@
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/locales.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/locales.html" />
 
-		<!-- Предзагрузка шрифтов для скорости -->
+		<!-- Асинхронная загрузка шрифтов -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Source+Sans+Pro:300,400,300italic,400italic&display=swap" />
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+		
+		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ (С ИСПРАВЛЕНИЕМ ДЛЯ МОБИЛЬНЫХ) -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			
@@ -60,11 +74,22 @@
 			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
 			.dropotron li:hover > a { background: #f4f4f4 !important; }
 
+			/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (ВОЗВРАЩАЕМ ШИРИНУ) */
 			@media screen and (max-width: 736px) {
 				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left img { width: 100% !important; }
+				.box { padding: 2em !important; } /* Возвращаем стандартный отступ планшетов */
+			}
+			@media screen and (max-width: 480px) {
+				.box { padding: 3em 1em !important; } /* Возвращаем стандартный отступ телефонов (1em по бокам) */
+				.container { width: 100% !important; }
 			}
 		</style>
+
+		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
+		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+
 		<!-- Facebook Pixel Code -->
 		<script>
 		!function(f,b,e,v,n,t,s)
@@ -116,7 +141,7 @@
 				</section>
 
 			<!-- Main -->
-				<section id="main" class="container">
+				<section id="main" class="container" role="main">
 					<section class="box">
 						
 						<header style="margin-bottom: 2em;">
@@ -126,7 +151,7 @@
 
 						<!-- БЛОК 1 -->
 						<div class="content-block">
-							<span class="image left"><img src="../images/cableado_1.webp" alt="Электромонтаж в коммерческом помещении Валенсия" /></span>
+							<span class="image left"><img src="../images/cableado_1.webp" alt="Электромонтаж в коммерческом помещении Валенсия" loading="lazy" width="ШИРИНА" height="ВЫСОТА" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Специфика электрики для коммерческих объектов</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
@@ -140,7 +165,7 @@
 
 						<!-- БЛОК 2 -->
 						<div class="content-block">
-							<span class="image left"><img src="../images/cableado_2.webp" alt="Прокладка кабеля в магазине или ресторане" loading="lazy" /></span>
+							<span class="image left"><img src="../images/cableado_2.webp" alt="Прокладка кабеля в магазине или ресторане" loading="lazy" width="ШИРИНА" height="ВЫСОТА" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Наши услуги для бизнеса</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
@@ -154,7 +179,7 @@
 
 						<!-- БЛОК 3 -->
 						<div class="content-block" style="margin-bottom: 0 !important;">
-							<span class="image left"><img src="../images/cableado_3.webp" alt="Готовая электрика в коммерческом помещении" loading="lazy" /></span>
+							<span class="image left"><img src="../images/cableado_3.webp" alt="Готовая электрика в коммерческом помещении" loading="lazy" width="ШИРИНА" height="ВЫСОТА" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Надежность и соответствие стандартам</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
@@ -180,9 +205,9 @@
 
 				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
-						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
+						<li><a href="#" aria-label="Facebook" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" aria-label="Instagram" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
 					</ul>
 					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
 						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
@@ -199,14 +224,25 @@
 
 		</div>
 		<script defer src="../assets/js/jquery.min.js"></script>
-<script defer src="../assets/js/jquery.dropotron.min.js"></script>
-<script defer src="../assets/js/jquery.scrollex.min.js"></script>
-<script defer src="../assets/js/browser.min.js"></script>
-<script defer src="../assets/js/breakpoints.min.js"></script>
-<script defer src="../assets/js/util.js"></script>
-<script defer src="../assets/js/main.js"></script>
-		<a href="https://wa.me/34624638089" aria-label="Написать в WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+		<script defer src="../assets/js/jquery.dropotron.min.js"></script>
+		<script defer src="../assets/js/jquery.scrollex.min.js"></script>
+		<script defer src="../assets/js/browser.min.js"></script>
+		<script defer src="../assets/js/breakpoints.min.js"></script>
+		<script defer src="../assets/js/util.js"></script>
+		<script defer src="../assets/js/main.js"></script>
+		
+		<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
+
+		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
+		<script>
+			window.addEventListener('load', function() {
+				setTimeout(function() {
+					var navBtn = document.querySelector('#navButton .toggle');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Меню');
+				}, 500);
+			});
+		</script>
 	</body>
 </html>
