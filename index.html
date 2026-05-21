@@ -4,7 +4,19 @@
 -->
 <html lang="es">
 	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<link rel="preload" as="image" href="images/banner.webp" fetchpriority="high" />
+
+		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+
 		<title>Electricista en Valencia | Reparaciones e instalaciones eléctricas</title>
+		<link rel="canonical" href="https://amperior.es/index.html" />
+		
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
@@ -12,9 +24,7 @@
 		<link rel="shortcut icon" href="/favicon.ico?v=3">
 		<link rel="manifest" href="/site.webmanifest?v=3">
 		<meta name="theme-color" content="#174e62">
-		<meta charset="utf-8" />
 		<meta name="description" content="¿Buscas electricista en Valencia? Reparación de averías, apagones, cambio de enchufes, cuadros eléctricos y boletines de luz. Rápido y económico." />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
 		<!-- SEO: hreflang -->
 		<link rel="alternate" hreflang="es" href="https://amperior.es/index.html" />
@@ -32,55 +42,65 @@
 			}
 		</script>
 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
-<style>
-    body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
-    #header { background-color: rgb(23, 78, 98) !important; }
-    #header.alt { background-color: transparent !important; }
+		<!-- Асинхронная загрузка шрифтов -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
 
-    /* Выравнивание иконок во всех раскрывающихся блоках (Услуги и Преимущества) */
-    #main div[onclick] i.icon.solid {
-        display: inline-block !important;
-        width: 40px !important;
-        text-align: center !important;
-        margin-right: 10px !important;
-    }
+		<style>
+			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
+			#header { background-color: rgb(23, 78, 98) !important; }
+			#header.alt { background-color: transparent !important; }
 
-    /* Цвет и размер иконок */
-    #main .icon.solid:before {
-        color: rgb(23, 78, 98) !important;
-        font-size: 0.9em !important;
-    }
+			/* Выравнивание иконок во всех раскрывающихся блоках (Услуги и Преимущества) */
+			#main div[onclick] i.icon.solid {
+				display: inline-block !important;
+				width: 40px !important;
+				text-align: center !important;
+				margin-right: 10px !important;
+			}
 
-    /* Стили меню: Белый цвет, Roboto, без капса */
-    #nav > ul > li > a { 
-        color: #fff !important; 
-        font-family: 'Roboto', sans-serif !important;
-        text-transform: none !important; 
-        font-weight: 500 !important;
-        letter-spacing: 0 !important;
-    }
+			/* Цвет и размер иконок */
+			#main .icon.solid:before {
+				color: rgb(23, 78, 98) !important;
+				font-size: 0.9em !important;
+			}
 
-    /* Выпадающее меню: Безопасный перенос текста и ширина */
-    .dropotron {
-        min-width: 15em !important;
-        max-width: 20em !important;
-        padding: 0.5em 0 !important;
-    }
-    .dropotron li a { 
-        text-transform: none !important; 
-        color: #000 !important; 
-        font-family: 'Roboto', sans-serif !important;
-        white-space: normal !important;
-        line-height: 1.3em !important;
-        padding: 0.6em 1.2em !important;
-        background: #fff !important;
-    }
-    .dropotron li:hover > a {
-        background: #f4f4f4 !important;
-    }
-</style>
+			/* Стили меню: Белый цвет, Roboto, без капса */
+			#nav > ul > li > a { 
+				color: #fff !important; 
+				font-family: 'Roboto', sans-serif !important;
+				text-transform: none !important; 
+				font-weight: 500 !important;
+				letter-spacing: 0 !important;
+			}
+
+			/* Выпадающее меню: Безопасный перенос текста и ширина */
+			.dropotron {
+				min-width: 15em !important;
+				max-width: 20em !important;
+				padding: 0.5em 0 !important;
+			}
+			.dropotron li a { 
+				text-transform: none !important; 
+				color: #000 !important; 
+				font-family: 'Roboto', sans-serif !important;
+				white-space: normal !important;
+				line-height: 1.3em !important;
+				padding: 0.6em 1.2em !important;
+				background: #fff !important;
+			}
+			.dropotron li:hover > a {
+				background: #f4f4f4 !important;
+			}
+		</style>
+
+		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<!-- Facebook Pixel Code -->
 		<script>
 		!function(f,b,e,v,n,t,s)
@@ -136,13 +156,13 @@
 				</section>
 
 			<!-- Main -->
-				<section id="main" class="container">
+				<section id="main" class="container" role="main">
 
 					<section class="box special">
 						<header class="major">
 							<h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important;">Soluciones eléctricas rápidas y seguras <br /> en Valencia y alrededores</h2>
 						</header>
-						<span class="image featured"><img src="images/pic01.webp" alt="Electricista arreglando avería en Valencia" /></span>
+						<span class="image featured"><img src="images/pic01.webp" alt="Electricista arreglando avería en Valencia" loading="lazy" width="1200" height="706" style="height: auto;" /></span>
 					</section>
 
 <!-- Блок УСЛУГ -->
@@ -255,7 +275,7 @@
 						<div class="col-6 col-12-narrower">
 							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
 								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
-									<img src="images/pic02.webp" alt="Electricidad para viviendas" />
+									<img src="images/pic02.webp" alt="Electricidad para viviendas" loading="lazy" width="800" height="450" style="height: auto;" />
 								</span>
 								<div style="padding: 25px;">
 									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Viviendas</h3>
@@ -269,7 +289,7 @@
 						<div class="col-6 col-12-narrower">
 							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
 								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
-									<img src="images/pic03.webp" alt="Electricidad para locales comerciales" />
+									<img src="images/pic03.webp" alt="Electricidad para locales comerciales" loading="lazy" width="800" height="450" style="height: auto;" />
 								</span>
 								<div style="padding: 25px;">
 									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Locales y negocios</h3>
@@ -298,9 +318,9 @@
 				<!-- Footer -->
 				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
-						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
+						<li><a href="#" aria-label="Facebook" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" aria-label="Instagram" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
 					</ul>
 					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
 						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
@@ -313,17 +333,27 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script defer src="assets/js/jquery.min.js"></script>
+			<script defer src="assets/js/jquery.dropotron.min.js"></script>
+			<script defer src="assets/js/jquery.scrollex.min.js"></script>
+			<script defer src="assets/js/browser.min.js"></script>
+			<script defer src="assets/js/breakpoints.min.js"></script>
+			<script defer src="assets/js/util.js"></script>
+			<script defer src="assets/js/main.js"></script>
 
 		<!-- WhatsApp Floating Button -->
-			<a href="https://wa.me/34624638089" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+			<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 				<span class="icon brands fa-whatsapp"></span>
 			</a>
+
+		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
+		<script>
+			window.addEventListener('load', function() {
+				setTimeout(function() {
+					var navBtn = document.querySelector('#navButton .toggle');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Menú');
+				}, 500);
+			});
+		</script>
 	</body>
 </html>
