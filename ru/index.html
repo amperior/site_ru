@@ -6,17 +6,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Электрик в Валенсии | Профессиональный электромонтаж | AmperioR</title>
-
-		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА CSS -->
-		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-	    <!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
 		<link rel="preload" as="image" href="../images/banner.webp" fetchpriority="high" />
+		
 		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
 		<link rel="preload" as="font" href="../assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
 		<link rel="preload" as="font" href="../assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
 
+		<title>Электрик в Валенсии | Профессиональный электромонтаж | AmperioR</title>
+		
 		<!-- SEO: Title и Canonical -->
 		<link rel="canonical" href="https://amperior.es/ru/index.html" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
@@ -44,9 +43,9 @@
 		<!-- Предзагрузка шрифтов для скорости -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" /></noscript>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
 		
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
@@ -95,7 +94,22 @@
 			.dropotron li:hover > a {
 				background: #f4f4f4 !important;
 			}
+
+			/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (ВОЗВРАЩАЕМ ШИРИНУ) */
+			@media screen and (max-width: 736px) {
+				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left img { width: 100% !important; }
+				.box { padding: 2em !important; }
+			}
+			@media screen and (max-width: 480px) {
+				.box { padding: 3em 1em !important; }
+				.container { width: 100% !important; }
+			}
 		</style>
+
+		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
+		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 
 		<!-- Facebook Pixel Code -->
 		<script>
@@ -244,7 +258,7 @@
 									<span><i class="icon solid fa-shield-alt" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Стандарты REBT</span>
 									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Работы осуществляются строго по нормам REBT — главному нормативному документу в Испании. <!-- <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a> --></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Работы осуществляются строго по нормам REBT — главному нормативному документу в Испании.</p>
 							</div>
 
 							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;">
@@ -252,7 +266,7 @@
 									<span><i class="icon solid fa-euro-sign" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Честная цена</span>
 									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Фиксированная смета до начала работ. <!-- <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a> --></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Фиксированная смета до начала работ.</p>
 							</div>
 
 							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;">
@@ -260,7 +274,7 @@
 									<span><i class="icon solid fa-user-check" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Профессионализм</span>
 									<span style="font-size: 0.8em; color: #000;">▼</span>
 								</h3>
-								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Профильное образование и большой опыт в области электрификации. <!-- <a href="#" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a> --></p>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Профильное образование и большой опыт в области электрификации.</p>
 							</div>
 
 						</div>
@@ -333,12 +347,12 @@
 
 		<!-- Scripts -->
 			<script defer src="../assets/js/jquery.min.js"></script>
-            <script defer src="../assets/js/jquery.dropotron.min.js"></script>
-            <script defer src="../assets/js/jquery.scrollex.min.js"></script>
-            <script defer src="../assets/js/browser.min.js"></script>
-            <script defer src="../assets/js/breakpoints.min.js"></script>
-            <script defer src="../assets/js/util.js"></script>
-            <script defer src="../assets/js/main.js"></script>
+			<script defer src="../assets/js/jquery.dropotron.min.js"></script>
+			<script defer src="../assets/js/jquery.scrollex.min.js"></script>
+			<script defer src="../assets/js/browser.min.js"></script>
+			<script defer src="../assets/js/breakpoints.min.js"></script>
+			<script defer src="../assets/js/util.js"></script>
+			<script defer src="../assets/js/main.js"></script>
 
 			<!-- Скрипт для раскрывающихся блоков (Заменяет 11 inline-скриптов) -->
 			<script>
@@ -356,7 +370,7 @@
 			</script>
 
 		<!-- WhatsApp Floating Button -->
-			<a href="https://wa.me/34624638089" aria-label="Написать в WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+			<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 				<span class="icon brands fa-whatsapp"></span>
 			</a>
 
