@@ -4,47 +4,66 @@
 -->
 <html lang="es">
 	<head>
-		<title>Boletín Eléctrico en Valencia y Certificados OCA | AmperioR</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
+
+		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+
+		<!-- SEO: Title y Canonical -->
+		<title>Boletín Eléctrico en Valencia | Electricista Autorizado | AmperioR</title>
+		<link rel="canonical" href="https://amperior.es/boletin.html" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
 		<link rel="shortcut icon" href="/favicon.ico?v=3">
+        <link rel="icon" href="https://amperior.es/favicon.ico" sizes="any">
 		<link rel="manifest" href="/site.webmanifest?v=3">
 		<meta name="theme-color" content="#174e62">
-		<meta charset="utf-8" />
-		<meta name="description" content="¿Necesitas un boletín eléctrico en Valencia para dar de alta la luz o subir la potencia? Tramitamos tu certificado CIE y pasamos la inspección OCA rápido." />
-		<link rel="canonical" href="https://amperior.es/boletin.html" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="¿Necesitas un boletín eléctrico en Valencia para dar de alta la luz o subir la potencia? Electricista autorizado rápido y económico." />
 		
+		<!-- Open Graph -->
+		<meta property="og:title" content="Boletín Eléctrico en Valencia | Electricista Autorizado" />
+		<meta property="og:description" content="¿Necesitas un boletín eléctrico en Valencia para dar de alta la luz o subir la potencia? Electricista autorizado rápido y económico." />
+		<meta property="og:image" content="https://amperior.es/images/diagnostica_1.webp" />
+		<meta property="og:url" content="https://amperior.es/boletin.html" />
+		<meta property="og:type" content="website" />
+
 		<!-- SEO: hreflang -->
 		<link rel="alternate" hreflang="es" href="https://amperior.es/boletin.html" />
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/boletin.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/boletin.html" />
 
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" />
+		<!-- Асинхронная загрузка шрифтов -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+
+		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ (С ИСПРАВЛЕНИЕМ ДЛЯ МОБИЛЬНЫХ) -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
-			
-			/* ЛОГИКА ШАПКИ: ПРОЗРАЧНОСТЬ И ЦВЕТ */
 			#header { background-color: rgb(23, 78, 98) !important; }
 			#header.alt { background-color: transparent !important; box-shadow: none !important; }
 			
-			/* ИСПРАВЛЕНИЕ ШИРИНЫ И ОТМЕНА НАЕЗДА КОНТЕНТА */
 			.container { width: 95% !important; max-width: 1200px !important; }
 			body.landing #main { margin-top: 0 !important; padding-top: 1.5em !important; }
 
-			/* ПОДНЯТИЕ КОНТЕНТА ВНУТРИ БЛОКА */
 			.box { text-align: left !important; padding: 2.7em 2em 3em 2em !important; }
 
-			/* КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
 			img { max-width: 100% !important; height: auto !important; display: block; }
 			.image.left { float: left !important; width: 350px !important; max-width: 45% !important; margin: 0.5em 2em 1.5em 0 !important; }
 			.text-wrapper { overflow: hidden !important; display: block !important; }
 			.content-block { clear: both !important; margin-bottom: 2em !important; }
 			h3 { margin-bottom: 0.85em !important; }
 
-			/* Стили меню */
 			#nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
 			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
 			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
@@ -52,9 +71,19 @@
 
 			@media screen and (max-width: 736px) {
 				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left img { width: 100% !important; }
+				.box { padding: 2em !important; }
+			}
+			@media screen and (max-width: 480px) {
+				.box { padding: 3em 1em !important; }
+				.container { width: 100% !important; }
 			}
 		</style>
+
+		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<!-- Facebook Pixel Code -->
 		<script>
 		!function(f,b,e,v,n,t,s)
@@ -69,6 +98,7 @@
 		fbq('track', 'PageView');
 		</script>
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
+		<!-- End Facebook Pixel Code -->
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
 	<body class="landing is-preload">
@@ -76,7 +106,7 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<span class="logo"><a href="index.html">AmperioR.es</a></span>
+					<span class="logo"><a href="index.html">AmperioR</a></span>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
@@ -90,7 +120,7 @@
 									<li><a href="conexion.html">Enganches a la red</a></li>
 									<li><a href="potencia.html">Subir la potencia</a></li>
 									<li><a href="solar.html">Placas solares</a></li>
-									<li><a href="boletin.html">Boletín Eléctrico (CIE)</a></li>
+									<li><a href="boletin.html">Boletín Eléctrico</a></li>
 								</ul>
 							</li>
 							<li><a href="ru/boletin.html" style="font-weight: bold;">RU</a></li>
@@ -101,24 +131,24 @@
 
 			<!-- Banner -->
 				<section id="banner" style="padding: 6em 15px; background: url('images/banner3.webp') center/cover no-repeat !important;">
-					<h1 style="font-size: 2.8em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Boletines y Certificados</h1>
-					<p style="font-size: 1.5em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Hacemos tu boletín de luz, pasamos la OCA y hablamos con Iberdrola por ti</p>
+					<h1 style="font-size: 2.8em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Boletín Eléctrico</h1>
+					<p style="font-size: 1.5em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Electricista autorizado para dar de alta la luz o subir la potencia</p>
 				</section>
 
 			<!-- Main -->
-				<section id="main" class="container">
+				<section id="main" class="container" role="main">
 					<section class="box">
 						
 						<header style="margin-bottom: 2em;">
-							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Boletín eléctrico y certificados en Valencia</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Te ayudamos a conseguir los papeles de la luz rápido y sin líos para que puedas dar de alta el suministro o cambiar el contrato de tu casa o local</p>
+							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Boletín eléctrico en Valencia</h2>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Revisamos tu instalación y emitimos el boletín eléctrico necesario para que puedas tener luz en tu casa o local sin problemas.</p>
 						</header>
 
 						<!-- БЛОК 1 -->
 						<div class="content-block">
-							<span class="image left"><img src="images/diagnostica_1.webp" alt="Boletín eléctrico CIE en Valencia" /></span>
+							<span class="image left"><img src="images/diagnostica_1.webp" alt="Boletín eléctrico en Valencia" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Cuándo te piden el Boletín de Luz (CIE)?</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Cuándo te piden el Boletín de Luz?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
 									<li style="margin-bottom: 10px;">Para dar de alta la luz en una casa nueva o local comercial</li>
 									<li style="margin-bottom: 10px;">Para subir o bajar la potencia contratada con tu compañía</li>
@@ -130,26 +160,26 @@
 
 						<!-- БЛОК 2 -->
 						<div class="content-block">
-							<span class="image left"><img src="images/diagnostica_2.webp" alt="Inspección OCA para locales comerciales" loading="lazy" /></span>
+							<span class="image left"><img src="images/diagnostica_2.webp" alt="Revisión de instalación eléctrica" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Inspecciones OCA para negocios</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Revisión y puesta a punto</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Revisamos toda la instalación antes de que venga el inspector</li>
+									<li style="margin-bottom: 10px;">Comprobamos que tu cuadro eléctrico y cableado sean seguros</li>
 									<li style="margin-bottom: 10px;">Arreglamos cualquier fallo o cable viejo para que todo esté en regla</li>
-									<li style="margin-bottom: 10px;">Estamos presentes el día de la inspección para que no tengas que preocuparte de nada</li>
-									<li style="margin-bottom: 10px;">Conseguimos el certificado favorable para que puedas abrir tu negocio</li>
+									<li style="margin-bottom: 10px;">Aseguramos que la instalación cumpla con la normativa actual</li>
+									<li style="margin-bottom: 10px;">Trabajo rápido para que no te quedes sin suministro</li>
 								</ul>
 							</div>
 						</div>
 
 						<!-- БЛОК 3 -->
 						<div class="content-block" style="margin-bottom: 0 !important;">
-							<span class="image left"><img src="images/diagnostica_3.webp" alt="Trámites con Iberdrola y compañías de luz" loading="lazy" /></span>
+							<span class="image left"><img src="images/diagnostica_3.webp" alt="Electricista autorizado en Valencia" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Trámites con la compañía de luz</h3>
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Servicio rápido y garantizado</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
-									Nos peleamos con el papeleo de Iberdrola, Endesa y otras compañías por ti. Garantizamos que todos los documentos estén perfectos para que tengas luz lo antes posible y sin dolores de cabeza<br />
-									Escríbenos por WhatsApp o llámanos para ver tu caso y darte una solución rápida
+									Como instaladores autorizados, nos encargamos de revisar tu instalación y emitir el boletín eléctrico de forma rápida y económica.<br />
+									Escríbenos por WhatsApp o llámanos para ver tu caso y darte una solución en el menor tiempo posible.
 								</p>
 							</div>
 						</div>
@@ -169,9 +199,9 @@
 
 				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/amperior.es/" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
-						<li><a href="https://wa.me/34624638089" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
+						<li><a href="#" aria-label="Facebook" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" aria-label="Instagram" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
 					</ul>
 					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
 						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
@@ -184,15 +214,26 @@
 			</div>
 
 		</div>
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.dropotron.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<a href="https://wa.me/34624638089" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+		<script defer src="assets/js/jquery.min.js"></script>
+		<script defer src="assets/js/jquery.dropotron.min.js"></script>
+		<script defer src="assets/js/jquery.scrollex.min.js"></script>
+		<script defer src="assets/js/browser.min.js"></script>
+		<script defer src="assets/js/breakpoints.min.js"></script>
+		<script defer src="assets/js/util.js"></script>
+		<script defer src="assets/js/main.js"></script>
+		
+		<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
+
+		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
+		<script>
+			window.addEventListener('load', function() {
+				setTimeout(function() {
+					var navBtn = document.querySelector('#navButton .toggle');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Menú');
+				}, 500);
+			});
+		</script>
 	</body>
 </html>
