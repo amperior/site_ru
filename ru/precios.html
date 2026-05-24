@@ -74,8 +74,17 @@
 			.dropotron li:hover > a { background: #f4f4f4 !important; }
 
 			/* ИСПРАВЛЕНИЕ ЦЕНТРОВКИ АККОРДЕОНА БЕЗ ИКОНОК */
-			.amp-js-accordion h3 { min-height: 40px; align-items: center !important; }
-
+			.amp-js-accordion h3 { 
+				min-height: 40px !important; 
+				align-items: center !important; 
+				line-height: 1 !important; 
+			}
+			.amp-js-accordion h3 span:first-child {
+				display: flex !important;
+				align-items: center !important;
+				height: 100% !important;
+			}
+			
 			/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (ВОЗВРАЩАЕМ ШИРИНУ) */
 			@media screen and (max-width: 736px) {
 				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
