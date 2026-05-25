@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Испанская версия (Корень) -->
   <url><loc>https://amperior.es/index.html</loc></url>
+  <url><loc>https://amperior.es/precios.html</loc></url>
   <url><loc>https://amperior.es/diagnostica.html</loc></url>
   <url><loc>https://amperior.es/cuadros.html</loc></url>
   <url><loc>https://amperior.es/cableado.html</loc></url>
@@ -13,6 +14,7 @@
 
   <!-- Русская версия (Папка /ru/) -->
   <url><loc>https://amperior.es/ru/index.html</loc></url>
+  <url><loc>https://amperior.es/ru/precios.html</loc></url>
   <url><loc>https://amperior.es/ru/diagnostica.html</loc></url>
   <url><loc>https://amperior.es/ru/cuadros.html</loc></url>
   <url><loc>https://amperior.es/ru/cableado.html</loc></url>
