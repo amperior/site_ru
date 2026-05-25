@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP | Optimizado para AmperioR
+-->
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
+
+		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+
+		<title>Precios de Electricista en Valencia | Tarifas y Presupuestos</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico?v=3">
+		<link rel="shortcut icon" href="/favicon.ico?v=3">
+		<link rel="icon" href="https://amperior.es/favicon.ico" sizes="any">
+		<link rel="manifest" href="/site.webmanifest?v=3">
+		<meta name="theme-color" content="#174e62">
+		<meta name="description" content="Lista de precios de electricista en Valencia. Tarifas claras para reparación de averías, cambiar enchufes, cuadros eléctricos y boletines de luz." />
+		<link rel="canonical" href="https://amperior.es/precios.html" />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content="Precios de Electricista en Valencia | Tarifas y Presupuestos" />
+		<meta property="og:description" content="Lista de precios de electricista en Valencia. Tarifas claras para reparación de averías, cambiar enchufes, cuadros eléctricos y boletines de luz." />
+		<meta property="og:image" content="https://amperior.es/images/diagnostica_1.webp" />
+		<meta property="og:url" content="https://amperior.es/precios.html" />
+		<meta property="og:type" content="website" />
+
+		<!-- SEO: hreflang -->
+		<link rel="alternate" hreflang="es" href="https://amperior.es/precios.html" />
+		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/precios.html" />
+		<link rel="alternate" hreflang="x-default" href="https://amperior.es/precios.html" />
+
+		<!-- Асинхронная загрузка шрифтов -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+		
+		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ С ИСПРАВЛЕНИЕМ ЦЕНТРОВКИ -->
+		<style>
+			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
+			
+			/* ЛОГИКА ШАПКИ: ПРОЗРАЧНОСТЬ И ЦВЕТ */
+			#header { background-color: rgb(23, 78, 98) !important; }
+			#header.alt { background-color: transparent !important; box-shadow: none !important; }
+			
+			/* ИСПРАВЛЕНИЕ ШИРИНЫ И ОТМЕНА НАЕЗДА КОНТЕНТА */
+			.container { width: 95% !important; max-width: 1200px !important; }
+			body.landing #main { margin-top: 0 !important; padding-top: 1.5em !important; }
+
+			/* ПОДНЯТИЕ КОНТЕНТА ВНУТРИ БЛОКА */
+			.box { text-align: left !important; padding: 2.7em 2em 3em 2em !important; }
+
+			/* КОРРЕКТНОСТЬ ИЗОБРАЖЕНИЙ И ОБТЕКАНИЯ */
+			img { max-width: 100% !important; height: auto !important; display: block; }
+			.image.left { float: left !important; width: 350px !important; max-width: 45% !important; margin: 0.5em 2em 1.5em 0 !important; }
+			.text-wrapper { overflow: hidden !important; display: block !important; }
+			.content-block { clear: both !important; margin-bottom: 2em !important; }
+			h3 { margin-bottom: 0.85em !important; }
+
+			/* Стили меню */
+			#nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
+			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
+			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
+			.dropotron li:hover > a { background: #f4f4f4 !important; }
+
+			/* ИСПРАВЛЕНИЕ ЦЕНТРОВКИ АККОРДЕОНА БЕЗ ИКОНОК */
+			.amp-js-accordion h3 { 
+				display: flex !important;
+				align-items: center !important;
+				min-height: 40px !important;
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+			.amp-js-accordion h3 span {
+				line-height: 1.2 !important;
+				display: inline-block !important;
+				vertical-align: middle !important;
+			}
+
+			/* ИСПРАВЛЕНИЕ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ (ВОЗВРАЩАЕМ ШИРИНУ) */
+			@media screen and (max-width: 736px) {
+				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left img { width: 100% !important; }
+				.box { padding: 2em !important; }
+			}
+			@media screen and (max-width: 480px) {
+				.box { padding: 3em 1em !important; }
+				.container { width: 100% !important; }
+			}
+		</style>
+
+		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1840828603280022');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
+		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<span class="logo"><a href="index.html">AmperioR</a></span>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="precios.html">Precios</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Servicios</a>
+								<ul>
+									<li><a href="diagnostica.html">Reparación de averías</a></li>
+									<li><a href="cuadros.html">Cambiar cuadro eléctrico</a></li>
+									<li><a href="cableado.html">Cambiar cables y enchufes</a></li>
+									<li><a href="locales.html" title="Electricidad para locales comerciales">Para negocios</a></li>
+									<li><a href="conexion.html">Enganches a la red</a></li>
+									<li><a href="potencia.html">Subir la potencia</a></li>
+									<!-- <li><a href="solar.html">Placas solares</a></li> -->
+									<li><a href="boletin.html">Boletín Eléctrico (CIE)</a></li>
+								</ul>
+							</li>
+							<li><a href="ru/precios.html" style="font-weight: bold;">RU</a></li>
+							<li><a href="tel:+34624638089" class="button">Llamar al electricista</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner" style="padding: 6em 15px; background: url('images/banner3.webp') center/cover no-repeat !important;">
+					<h1 style="font-size: 2.8em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Precios y Tarifas</h1>
+					<p style="font-size: 1.5em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Lista de precios para trabajos de electricidad en Valencia</p>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container" role="main">
+					<section class="box special" style="background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 2em;">
+						<div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Electricista urgente / Averías</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Salida rápida si te has quedado sin luz, hay un apagón o saltan los plomos.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Buscar cortocircuitos</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Encontramos por qué huele a quemado o salen chispas de los enchufes.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Salta el diferencial / Fugas de corriente</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Solucionamos el problema cuando la luz se corta sola o los electrodomésticos dan calambre.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Cambiar toda la instalación eléctrica</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Quitamos los cables viejos y ponemos cableado nuevo y seguro en toda la casa.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Enchufe para horno o aire acondicionado</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Tiramos un cable directo desde el cuadro para aparatos que gastan mucha luz.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Poner enchufes e interruptores nuevos</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Cambiamos los mecanismos viejos o rotos por unos modernos y seguros.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Mover enchufes de sitio (hacer rozas)</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Hacemos el agujero en la pared para cambiar el enchufe de lugar si vas a reformar.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Instalar lámparas y focos LED</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Colgamos lámparas, ponemos focos en el techo o tiras de luces LED.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Conectar electrodomésticos</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Instalación segura de vitrocerámicas, campanas extractoras y termos eléctricos.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Cambiar cuadro eléctrico</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Quitamos el cuadro viejo y ponemos uno nuevo para repartir bien la luz de la casa.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Cambiar automáticos (plomos)</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Ponemos interruptores modernos para evitar incendios y cortes de luz.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Protector contra subidas de tensión</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Instalamos un aparato para que no se te queme la tele o la nevera si hay un pico de luz.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Enganches de luz (Acometidas)</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Metemos el cable desde la calle y preparamos la caja del contador para casas nuevas.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Subir la potencia contratada</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Preparamos los cables y te ayudamos a pedir más luz a Iberdrola para que no salte el ICP.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span>Boletín Eléctrico (CIE)</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">
+									<strong>Precio: desde ** €</strong><br />
+									Hacemos el certificado oficial que pide la compañía para dar de alta la luz o cambiar el titular.<br />
+									<em style="font-size: 0.8em; color: #777;">* No es una oferta vinculante. El precio final depende de la avería, consúltanos.</em>
+								</p>
+							</div>
+
+						</div>
+					</section>
+				</section>
+
+			<!-- CTA + Footer Wrapper -->
+			<div style="background: url('images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
+				<section id="cta" style="background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important;">
+					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">¿Necesitas un electricista?</h2>
+					<ul class="actions special">
+						<li><a href="tel:+34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">Llamar</a></li>
+						<li><a href="https://wa.me/34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">WhatsApp</a></li>
+					</ul>
+				</section>
+
+				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
+					<ul class="icons">
+						<li><a href="#" aria-label="Facebook" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" aria-label="Instagram" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
+					</ul>
+					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
+						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
+						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #fff !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-left: none !important; padding-left: 0 !important;">
+							<strong style="color: #fff !important;">Protección de Datos:</strong><br />
+							De conformidad con el RGPD y la LOPDGDD, le informamos que AmperioR.es trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación y supresión contactándonos.
+						</li>
+					</ul>
+				</footer>
+			</div>
+
+		</div>
+		<script defer src="assets/js/jquery.min.js"></script>
+		<script defer src="assets/js/jquery.dropotron.min.js"></script>
+		<script defer src="assets/js/jquery.scrollex.min.js"></script>
+		<script defer src="assets/js/browser.min.js"></script>
+		<script defer src="assets/js/breakpoints.min.js"></script>
+		<script defer src="assets/js/util.js"></script>
+		<script defer src="assets/js/main.js"></script>
+
+		<!-- Скрипт для раскрывающихся блоков -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const accordions = document.querySelectorAll('.amp-js-accordion');
+				accordions.forEach(function(acc) {
+					acc.addEventListener('click', function() {
+						const p = this.querySelector('p');
+						if (p) {
+							p.style.display = (p.style.display === 'none' ? 'block' : 'none');
+						}
+					});
+				});
+			});
+		</script>
+		
+		<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+			<span class="icon brands fa-whatsapp"></span>
+		</a>
+
+		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
+		<script>
+			window.addEventListener('load', function() {
+				setTimeout(function() {
+					var navBtn = document.querySelector('#navButton .toggle');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Menú');
+				}, 500);
+			});
+		</script>
+	</body>
+</html>
