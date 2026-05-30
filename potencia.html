@@ -7,10 +7,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<!-- PRECARGA DE IMAGEN PRINCIPAL (LCP) -->
 		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
 
-		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<!-- PRECARGA DE FUENTES -->
 		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
 		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
 
@@ -28,7 +28,7 @@
 		<!-- Open Graph -->
 		<meta property="og:title" content="Subir la Potencia de Luz en Valencia | Electricista Autorizado" />
 		<meta property="og:description" content="¿Te salta la luz al encender varios aparatos? Te ayudamos a subir la potencia contratada en Valencia. Hacemos el boletín y los trámites con Iberdrola." />
-		<meta property="og:image" content="https://amperior.es/images/diagnostica_1.webp" />
+		<meta property="og:image" content="https://amperior.es/images/potencia1.webp" />
 		<meta property="og:url" content="https://amperior.es/potencia.html" />
 		<meta property="og:type" content="website" />
 
@@ -37,14 +37,38 @@
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/potencia.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/potencia.html" />
 
-		<!-- Асинхронная загрузка шрифтов -->
+		<!-- MICRODATOS JSON-LD PARA GOOGLE -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Electrician",
+		  "name": "AmperioR",
+		  "url": "https://amperior.es/potencia.html",
+		  "telephone": "+34624638089",
+		  "image": "https://amperior.es/images/potencia1.webp",
+		  "description": "¿Te salta la luz al encender varios aparatos? Te ayudamos a subir la potencia contratada en Valencia. Hacemos el boletín y los trámites con Iberdrola.",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Valencia",
+			"addressRegion": "Valencia",
+			"addressCountry": "ES"
+		  },
+		  "areaServed": [
+			"Valencia", "Cullera", "Carcaixent", "Chiva", "Silla", "Puerto de Sagunto", "Gandía", "Godella", "Alboraya", "Burjassot", "Torrent", "Llíria", "Oliva", "Calicanto", "Xeraco", "Xàtiva", "Sagunto", "Alzira", "Tavernes de la Valldigna", "Algemesí"
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/amperior.es/",
+			"https://wa.me/34624638089"
+		  ]
+		}
+		</script>
+
+		<!-- FUENTES -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
-		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ (С ИСПРАВЛЕНИЕМ ДЛЯ МОБИЛЬНЫХ) -->
+		<!-- BLOQUE DE ESTILOS -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			#header { background-color: rgb(23, 78, 98) !important; }
@@ -77,7 +101,6 @@
 			}
 		</style>
 
-		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -95,7 +118,6 @@
 		fbq('track', 'PageView');
 		</script>
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
-		<!-- End Facebook Pixel Code -->
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
 	<body class="landing is-preload">
@@ -138,7 +160,7 @@
 						
 						<header style="margin-bottom: 2em;">
 							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Aumento de potencia eléctrica en Valencia</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Si te salta la luz al encender varios aparatos, te ayudamos a subir la potencia contratada. Preparamos la instalación y hacemos el Boletín Eléctrico (CIE)</p>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Si te salta la luz al encender varios aparatos, te ayudamos a subir la potencia contratada. Preparamos la instalación y hacemos el Boletín Eléctrico (CIE).</p>
 						</header>
 
 						<!-- БЛОК 1 -->
@@ -147,10 +169,10 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Cuándo necesitas subir la potencia?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Si te salta el ICP (el automático general) al poner el horno y el aire a la vez</li>
-									<li style="margin-bottom: 10px;">Si has comprado electrodomésticos nuevos o vas a poner un cargador de coche eléctrico</li>
-									<li style="margin-bottom: 10px;">Si vas a quitar el gas y poner calefacción eléctrica (como la aerotermia)</li>
-									<li style="margin-bottom: 10px;">Si vas a abrir un negocio y necesitas más luz para las máquinas</li>
+									<li style="margin-bottom: 10px;">Si te salta el ICP (el automático general) al poner el horno y el aire a la vez.</li>
+									<li style="margin-bottom: 10px;">Si has comprado electrodomésticos nuevos o vas a poner un cargador de coche eléctrico.</li>
+									<li style="margin-bottom: 10px;">Si vas a quitar el gas y poner calefacción eléctrica (como la aerotermia).</li>
+									<li style="margin-bottom: 10px;">Si vas a abrir un negocio y necesitas más luz para las máquinas.</li>
 								</ul>
 							</div>
 						</div>
@@ -161,10 +183,10 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Qué hacemos para subir tu potencia?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Calculamos cuánta luz necesitas realmente para que no pagues de más</li>
-									<li style="margin-bottom: 10px;">Cambiamos el cable principal (Derivación Individual) si es muy fino para la nueva potencia</li>
-									<li style="margin-bottom: 10px;">Cambiamos el interruptor general de tu cuadro eléctrico</li>
-									<li style="margin-bottom: 10px;">Hacemos el Boletín Eléctrico (CIE) que te va a pedir la compañía</li>
+									<li style="margin-bottom: 10px;">Calculamos cuánta luz necesitas realmente para que no pagues de más.</li>
+									<li style="margin-bottom: 10px;">Cambiamos el cable principal (Derivación Individual) si es muy fino para la nueva potencia.</li>
+									<li style="margin-bottom: 10px;">Cambiamos el interruptor general de tu cuadro eléctrico.</li>
+									<li style="margin-bottom: 10px;">Hacemos el Boletín Eléctrico (CIE) que te va a pedir la compañía.</li>
 								</ul>
 							</div>
 						</div>
@@ -175,10 +197,9 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Trámites con la compañía de luz</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
-									Nos encargamos de la parte técnica y del papeleo. Dejamos tu instalación cumpliendo la normativa <strong>REBT</strong> y te ayudamos a pedir el aumento a Iberdrola, Endesa o tu compañía<br />
-									Tendrás la potencia que necesitas sin complicaciones<br />
-									Escríbenos por WhatsApp o llámanos para ver tu caso<br />
-									
+									Nos encargamos de la parte técnica y del papeleo. Dejamos tu instalación cumpliendo la normativa <strong>REBT</strong> y te ayudamos a pedir el aumento a Iberdrola, Endesa o tu compañía.<br />
+									Tendrás la potencia que necesitas sin complicaciones.<br />
+									Escríbenos por WhatsApp o llámanos para ver tu caso.
 								</p>
 							</div>
 						</div>
@@ -225,7 +246,6 @@
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
 
-		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
 		<script>
 			window.addEventListener('load', function() {
 				setTimeout(function() {
