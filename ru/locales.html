@@ -1,41 +1,68 @@
 <!DOCTYPE HTML>
 <!--
-	Alpha by HTML5 UP | Optimizado para AmperioR.es
+	Alpha by HTML5 UP | Оптимизировано для AmperioR
 -->
-<html lang="es">
+<html lang="ru">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+		
 		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
-		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
-
+		<link rel="preload" as="image" href="../images/banner.webp" fetchpriority="high" />
+		
 		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
-		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
-		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="../assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="../assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
 
+		<title>Электрик в Валенсии | Профессиональный электромонтаж | AmperioR</title>
+		
 		<!-- SEO: Title и Canonical -->
-		<title>Instalaciones Eléctricas para Locales Comerciales en Valencia | AmperioR.es</title>
-		<link rel="canonical" href="https://amperior.es/locales.html" />
-
+		<link rel="canonical" href="https://amperior.es/ru/index.html" />
         <link rel="icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="https://amperior.es/apple-touch-icon.png">
 		<link rel="manifest" href="/site.webmanifest?v=3">
 		<meta name="theme-color" content="#174e62">
-		<meta name="description" content="Servicios profesionales de electricidad para locales comerciales, tiendas y oficinas en Valencia. Instalaciones, boletines eléctricos y preparación para inspecciones OCA." />
+		<meta name="description" content="Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов, ремонт и замена электропроводки, диагностика неисправностей по нормам REBT." />
 		
 		<!-- Open Graph для соцсетей и мессенджеров -->
-		<meta property="og:title" content="Instalaciones Eléctricas para Locales Comerciales en Valencia | AmperioR.es" />
-		<meta property="og:description" content="Servicios profesionales de electricidad para locales comerciales, tiendas и oficinas en Valencia. Instalaciones, boletines eléctricos и preparación para inspecciones OCA." />
-		<meta property="og:image" content="https://amperior.es/images/cableado_1.webp" />
-		<meta property="og:url" content="https://amperior.es/locales.html" />
+		<meta property="og:title" content="Электрик в Валенсии | AmperioR" />
+		<meta property="og:description" content="Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов, ремонт и замена электропроводки, диагностика неисправностей по нормам REBT." />
+		<meta property="og:image" content="https://amperior.es/images/pic01.webp" />
+		<meta property="og:url" content="https://amperior.es/ru/index.html" />
 		<meta property="og:type" content="website" />
 
 		<!-- SEO: hreflang -->
-		<link rel="alternate" hreflang="es" href="https://amperior.es/locales.html" />
-		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/locales.html" />
-		<link rel="alternate" hreflang="x-default" href="https://amperior.es/locales.html" />
+		<link rel="alternate" hreflang="es" href="https://amperior.es/index.html" />
+		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/index.html" />
+		<link rel="alternate" hreflang="x-default" href="https://amperior.es/index.html" />
+
+		<!-- МИКРОРАЗМЕТКА JSON-LD -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Electrician",
+		  "name": "AmperioR",
+		  "url": "https://amperior.es/ru/index.html",
+		  "telephone": "+34624638089",
+		  "image": "https://amperior.es/images/pic01.webp",
+		  "description": "Профессиональные услуги электрика в Валенсии. Электромонтаж, ремонт, сборка щитов, ремонт и замена электропроводки, диагностика неисправностей по нормам REBT.",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Валенсия",
+			"addressRegion": "Валенсия",
+			"addressCountry": "Испания"
+		  },
+		  "areaServed": [
+			"Valencia", "Cullera", "Carcaixent", "Chiva", "Silla", "Puerto de Sagunto", "Gandía", "Godella", "Alboraya", "Burjassot", "Torrent", "Llíria", "Oliva", "Calicanto", "Xeraco", "Xàtiva", "Sagunto", "Alzira", "Tavernes de la Valldigna", "Algemesí"
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/amperior.es/",
+			"https://wa.me/34624638089",
+			"https://www.youtube.com/@Egor_Amperior"
+		  ]
+		}
+		</script>
 
 		<!-- Асинхронная загрузка шрифтов -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,36 +71,23 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
 		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
 		
-		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			#header { background-color: rgb(23, 78, 98) !important; }
-			#header.alt { background-color: transparent !important; box-shadow: none !important; }
-			.container { width: 95% !important; max-width: 1200px !important; }
-			body.landing #main { margin-top: 0 !important; padding-top: 1.5em !important; }
-			.box { text-align: left !important; padding: 2.7em 2em 3em 2em !important; }
-			img { max-width: 100% !important; height: auto !important; display: block; }
-			.image.left { float: left !important; width: 350px !important; max-width: 45% !important; margin: 0.5em 2em 1.5em 0 !important; }
-			.text-wrapper { overflow: hidden !important; display: block !important; }
-			.content-block { clear: both !important; margin-bottom: 2em !important; }
-			h3 { margin-bottom: 0.85em !important; }
+			#header.alt { background-color: transparent !important; }
+			#main div[onclick] i.icon.solid,
+			#main div.amp-js-accordion i.icon.solid { display: inline-block !important; width: 40px !important; text-align: center !important; margin-right: 10px !important; }
+			#main .icon.solid:before { color: rgb(23, 78, 98) !important; font-size: 0.9em !important; }
 			#nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
 			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
 			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
 			.dropotron li:hover > a { background: #f4f4f4 !important; }
-			@media screen and (max-width: 736px) {
-				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
-				.image.left img { width: 100% !important; }
-				.box { padding: 2em !important; }
-			}
-			@media screen and (max-width: 480px) {
-				.box { padding: 3em 1em !important; }
-				.container { width: 100% !important; }
-			}
+			@media screen and (max-width: 736px) { .image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; } .image.left img { width: 100% !important; } .box { padding: 2em !important; } }
+			@media screen and (max-width: 480px) { .box { padding: 3em 1em !important; } .container { width: 100% !important; } }
 		</style>
 
-		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 
 		<!-- Facebook Pixel Code -->
 		<script>
@@ -96,94 +110,190 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<span class="logo"><a href="index.html">AmperioR.es</a></span>
+					<span class="logo"><a href="index.html">AmperioR</a></span>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Inicio</a></li>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="precios.html">Цены</a></li>
 							<li>
-								<a href="#" class="icon solid fa-angle-down">Servicios</a>
+								<a href="#" class="icon solid fa-angle-down">Услуги</a>
 								<ul>
-									<li><a href="diagnostica.html">Reparación de averías</a></li>
-									<li><a href="cuadros.html">Cambiar cuadro eléctrico</a></li>
-									<li><a href="cableado.html">Cambiar cables y enchufes</a></li>
-									<li><a href="locales.html" title="Electricidad para locales comerciales">Para negocios</a></li>
-									<li><a href="conexion.html">Enganches a la red</a></li>
-									<li><a href="potencia.html">Subir la potencia</a></li>
-									<li><a href="solar.html">Placas solares</a></li>
-									<li><a href="boletin.html">Boletín Eléctrico (CIE)</a></li>
+									<li><a href="diagnostica.html">Диагностика и ремонт</a></li>
+									<li><a href="cuadros.html">Монтаж электрощитов</a></li>
+									<li><a href="cableado.html">Электропроводка</a></li>
+									<li><a href="locales.html" title="Электрика для коммерческих помещений">Для бизнеса</a></li>
+									<li><a href="conexion.html">Подключение к сети</a></li>
+									<li><a href="potencia.html">Повышение мощности</a></li>
+									<li><a href="solar.html">Солнечные панели</a></li>
+									<li><a href="boletin.html">Документы (Boletín)</a></li>
 								</ul>
 							</li>
-							<li><a href="ru/locales.html" style="font-weight: bold;">RU</a></li>
-							<li><a href="tel:+34624638089" class="button">Llamar al electricista</a></li>
+							<li><a href="../index.html" style="font-weight: bold;">ES</a></li>
+							<li><a href="tel:+34624638089" class="button">Вызвать мастера</a></li>
 						</ul>
 					</nav>
 				</header>
 
 			<!-- Banner -->
-				<section id="banner" style="padding: 6em 15px; background: url('images/banner3.webp') center/cover no-repeat !important;">
-					<h1 style="font-size: 2.8em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Electricidad para negocios</h1>
-					<p style="font-size: 1.5em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Instalaciones eléctricas integrales para locales comerciales, tiendas и restaurantes</p>
+				<section id="banner">
+					<h1 style="margin-top: 180px; font-size: 2.5em; text-transform: none; font-weight: bold; color: #fff !important;">Электрик в Валенсии</h1>
+					<p style="font-size: 2em; text-transform: none; font-weight: bold; line-height: 1.3 !important;">Профессиональный электромонтаж <br /> и ремонт любой сложности</p>
+					<ul class="actions special">
+						<li><a href="tel:+34624638089" class="button primary" style="height: 3.5em; line-height: 3.5em; padding: 0 2em; font-size: 1.3em; color: #000 !important;">Позвонить мастеру</a></li>
+					</ul>
 				</section>
 
 			<!-- Main -->
 				<section id="main" class="container" role="main">
-					<section class="box">
-						
-						<header style="margin-bottom: 2em;">
-							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Instalaciones eléctricas en oficinas, naves и locales en Valencia y alrededores</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Soluciones eléctricas fiables para empresas: desde el diseño и cableado hasta la obtención de certificados necesarios para la apertura</p>
+
+					<section class="box special">
+						<header class="major">
+							<h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important;">Услуги электрика высокого качества <br /> в Валенсии и регионе</h2>
 						</header>
-
-						<!-- БЛОК 1 -->
-						<div class="content-block">
-							<span class="image left"><img src="images/pic5.webp" alt="Instalación eléctrica comercial en Valencia" loading="lazy" width="800" height="533" style="height: auto;" /></span>
-							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Especificaciones eléctricas para locales comerciales</h3>
-								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Altos requisitos de seguridad и funcionamiento ininterrumpido de equipos</li>
-									<li style="margin-bottom: 10px;">Necesidad de cumplimiento estricto de la normativa para inspecciones</li>
-									<li style="margin-bottom: 10px;">Adaptación a necesidades específicas: escaparates, equipos de frío, hornos de gran potencia</li>
-									<li style="margin-bottom: 10px;">Requisitos de eficiencia energética e iluminación adecuada de zonas de trabajo</li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- БЛОК 2 -->
-						<div class="content-block">
-							<span class="image left"><img src="images/pic03.webp" alt="Cableado eléctrico en tienda o restaurante" loading="lazy" width="800" height="533" style="height: auto;" /></span>
-							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Nuestros servicios para empresas</h3>
-								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Instalaciones eléctricas completas llave en mano para oficinas, cafeterías, naves и peluquerías</li>
-									<li style="margin-bottom: 10px;">Montaje e instalación de cuadros eléctricos de gran potencia</li>
-									<li style="margin-bottom: 10px;">Instalación de sistemas de iluminación general, de emergencia и decorativa</li>
-									<li style="margin-bottom: 10px;">Preparación de documentación (Boletín Eléctrico) y acompañamiento en inspecciones (OCA)</li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- БЛОК 3 -->
-						<div class="content-block" style="margin-bottom: 0 !important;">
-							<span class="image left"><img src="images/pic4.webp" alt="Instalación eléctrica terminada en local comercial" loading="lazy" width="800" height="533" style="height: auto;" /></span>
-							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Fiabilidad и cumplimiento de estándares</h3>
-								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
-									Realizamos los trabajos en los plazos acordados, utilizando materiales de grado comercial. Todos los proyectos se ejecutan en estricto cumplimiento con el <strong>REBT</strong>.<br />
-									Ofrecemos apoyo durante las inspecciones.<br />
-									Contacte con nosotros por WhatsApp o teléfono para hablar de su proyecto.
-								</p>
-							</div>
-						</div>
-
+						<span class="image featured"><img src="../images/pic01.webp" alt="Электромонтаж в Валенсии" loading="lazy" width="1200" height="706" style="height: auto;" /></span>
 					</section>
+
+					<section class="box special" style="background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 2em;">
+						<div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-house-user" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Диагностика и ремонт</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Диагностика причин сработки УЗО, отключений электроэнергии, утечек тока и других неисправностей. Ремонт электропроводки любой сложности. <a href="diagnostica.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-bolt" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Монтаж электрощитов</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Расчёт, комплектация, сборка, монтаж и подключение электрических щитов под конкретные условия и потребности заказчика. <a href="cuadros.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-plug" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Электропроводка</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Планирование и монтаж электропроводки в квартирах, домах и помещениях. Полная реконструкция старой проводки. <a href="cableado.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-building" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Электрика для бизнеса</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Электромонтажные работы в офисах, магазинах, складах, ресторанах, парикмахерских. <a href="locales.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-power-off" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Подключение к сети</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Организация подключения к электросетям и ввод в эксплуатацию. Монтаж и замена питающих линий. <a href="conexion.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-chart-line" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Повышение мощности</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Запросы на повышение мощности в энергокомпанию. Сертификация Boletin Electrico. <a href="potencia.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-solar-panel" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Солнечные панели</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Монтаж и обслуживание солнечных панелей. <a href="solar.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px; box-sizing: border-box;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-file-signature" style="color: #0401a1; display: inline-block; width: 40px; text-align: center; margin-right: 10px;"></i> Документы</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-bottom: 0; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Подготовка документации и сопровождение прохождения инспекции OCA. <a href="boletin.html" onclick="event.stopPropagation();" style="display: block; margin-top: 10px; color: rgb(23, 78, 98); text-decoration: underline; font-weight: 500;">Узнать больше</a></p>
+							</div>
+
+						</div>
+					</section>
+
+					<section class="box special" style="background: transparent !important; padding: 0 !important; box-shadow: none !important; border: none !important; margin-bottom: 4em;">
+						<header class="major" style="margin-bottom: 2.5em !important; margin-top: 1em !important;">
+    <h2 style="font-size: 2em; text-transform: none; font-weight: 500; color: #000 !important;">Наши преимущества</h2>
+</header>
+						<div style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+							
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-shield-alt" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Стандарты REBT</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Работы осуществляются строго по нормам REBT — главному нормативному документу в Испании.</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-euro-sign" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Честная цена</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Фиксированная смета до начала работ.</p>
+							</div>
+
+							<div class="amp-js-accordion" style="cursor: pointer; padding: 20px 25px; border: 1px solid #ddd; text-align: left; background: #fff; border-radius: 8px;">
+								<h3 style="margin: 0; font-size: 1.5em !important; color: #000 !important; display: flex; align-items: center; justify-content: space-between; text-transform: none; font-weight: 500 !important;">
+									<span><i class="icon solid fa-user-check" style="color: #0401a1; width: 40px; text-align: center; margin-right: 10px;"></i> Профессионализм</span>
+									<span style="font-size: 0.8em; color: #000;">▼</span>
+								</h3>
+								<p style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee; font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important;">Профильное образование и большой опыт в области электрификации.</p>
+							</div>
+
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
+								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
+									<img src="../images/pic02.webp" alt="Жилые объекты" loading="lazy" width="800" height="450" style="height: auto;" />
+								</span>
+								<div style="padding: 25px;">
+									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Жилые объекты</h3>
+									<p style="font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; margin-bottom: 20px;">Полный комплекс электромонтажных работ для квартир и частных домов</p>
+									<ul class="actions">
+										<li><a href="cableado.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important;">Узнать больше</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div class="col-6 col-12-narrower">
+							<section class="box special" style="background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0; overflow: hidden; text-align: left; box-shadow: none !important;">
+								<span class="image featured" style="margin: 0 !important; width: 100% !important; left: 0 !important; position: relative !important;">
+									<img src="../images/pic03.webp" alt="Коммерческие помещения" loading="lazy" width="800" height="450" style="height: auto;" />
+								</span>
+								<div style="padding: 25px;">
+									<h3 style="font-size: 1.5em !important; color: #000 !important; text-transform: none !important; font-weight: 500 !important; margin-bottom: 15px;">Коммерческие помещения</h3>
+									<p style="font-size: 1.3em !important; color: #000 !important; line-height: 1.4 !important; margin-bottom: 20px;">Профессиональные решения для офисов, магазинов и ресторанов</p>
+									<ul class="actions">
+										<li><a href="locales.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important;">Узнать больше</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+
 				</section>
 
-			<!-- CTA + Footer Wrapper -->
-			<div style="background: url('images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
+			<div style="background: url('../images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
 				<section id="cta" style="background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important;">
-					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">¿Necesita asesoramiento profesional?</h2>
+					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">Нужна консультация специалиста?</h2>
 					<ul class="actions special">
-						<li><a href="tel:+34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">Llamar</a></li>
+						<li><a href="tel:+34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">Позвонить</a></li>
 						<li><a href="https://wa.me/34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">WhatsApp</a></li>
 					</ul>
 				</section>
@@ -195,24 +305,38 @@
 						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
 					</ul>
 					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
-						<li>&copy; AmperioR.es. Todos los derechos reservados</li>
+						<li>&copy; AmperioR.es. Все права защищены</li>
 						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #fff !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-left: none !important; padding-left: 0 !important;">
-							<strong style="color: #fff !important;">Protección de Datos:</strong><br />
-							De conformidad con el RGPD y la LOPDGDD, le informamos que AmperioR.es trata sus datos para gestionar sus solicitudes. La base legal es su consentimiento. No se cederán datos a terceros. Puede ejercer sus derechos de acceso, rectificación y supresión contactándonos.
+							<strong style="color: #fff !important;">Защита данных:</strong><br />
+							В соответствии с RGPD и LOPDGDD, сообщаем вам, что AmperioR.es обрабатывает ваши данные для управления вашими запросами. Правовой основой является ваше согласие. Данные не будут передаваться третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами.
 						</li>
 					</ul>
 				</footer>
 			</div>
 
 		</div>
-		<script defer src="assets/js/jquery.min.js"></script>
-		<script defer src="assets/js/jquery.dropotron.min.js"></script>
-		<script defer src="assets/js/jquery.scrollex.min.js"></script>
-		<script defer src="assets/js/browser.min.js"></script>
-		<script defer src="assets/js/breakpoints.min.js"></script>
-		<script defer src="assets/js/util.js"></script>
-		<script defer src="assets/js/main.js"></script>
-		
+		<script defer src="../assets/js/jquery.min.js"></script>
+		<script defer src="../assets/js/jquery.dropotron.min.js"></script>
+		<script defer src="../assets/js/jquery.scrollex.min.js"></script>
+		<script defer src="../assets/js/browser.min.js"></script>
+		<script defer src="../assets/js/breakpoints.min.js"></script>
+		<script defer src="../assets/js/util.js"></script>
+		<script defer src="../assets/js/main.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const accordions = document.querySelectorAll('.amp-js-accordion');
+				accordions.forEach(function(acc) {
+					acc.addEventListener('click', function() {
+						const p = this.querySelector('p');
+						if (p) {
+							p.style.display = (p.style.display === 'none' ? 'block' : 'none');
+						}
+					});
+				});
+			});
+		</script>
+
 		<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
@@ -221,9 +345,9 @@
 			window.addEventListener('load', function() {
 				setTimeout(function() {
 					var navBtn = document.querySelector('#navButton .toggle');
-					if (navBtn) navBtn.setAttribute('aria-label', 'Menú');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Меню');
 				}, 500);
 			});
 		</script>
 	</body>
-</html>
+</html> 
