@@ -7,15 +7,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<!-- PRECARGA DE IMAGEN PRINCIPAL (LCP) -->
 		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
 
-		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<!-- PRECARGA DE FUENTES -->
 		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
 		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
 
 		<!-- SEO: Title y Canonical -->
-		<title>Cambiar Cableado y Enchufes en Valencia | Instalación Eléctrica</title>
+		<title>Cambiar Cableado y Enchufes en Valencia | Instalación Eléctrica | AmperioR</title>
 		<link rel="canonical" href="https://amperior.es/cableado.html" />
 		
 		<link rel="icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
@@ -37,14 +37,39 @@
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/cableado.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/cableado.html" />
 
-		<!-- Асинхронная загрузка шрифтов -->
+		<!-- MICRODATOS JSON-LD PARA GOOGLE -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Electrician",
+		  "name": "AmperioR",
+		  "url": "https://amperior.es/cableado.html",
+		  "telephone": "+34624638089",
+		  "image": "https://amperior.es/images/cableado_1.webp",
+		  "description": "Instalación y cambio de cableado eléctrico en Valencia. Ponemos enchufes nuevos, hacemos rozas y renovamos la instalación de tu casa o piso de forma segura.",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Valencia",
+			"addressRegion": "Valencia",
+			"addressCountry": "ES"
+		  },
+		  "areaServed": [
+			"Valencia", "Cullera", "Carcaixent", "Chiva", "Silla", "Puerto de Sagunto", "Gandía", "Godella", "Alboraya", "Burjassot", "Torrent", "Llíria", "Oliva", "Calicanto", "Xeraco", "Xàtiva", "Sagunto", "Alzira", "Tavernes de la Valldigna", "Algemesí"
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/amperior.es/",
+			"https://wa.me/34624638089",
+			"https://www.youtube.com/@Egor_Amperior"
+		  ]
+		}
+		</script>
+
+		<!-- FUENTES -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
-		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ (С ИСПРАВЛЕНИЕМ ДЛЯ МОБИЛЬНЫХ) -->
+		<!-- BLOQUE DE ESTILOS -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			#header { background-color: rgb(23, 78, 98) !important; }
@@ -77,7 +102,6 @@
 			}
 		</style>
 
-		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -95,7 +119,6 @@
 		fbq('track', 'PageView');
 		</script>
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
-		<!-- End Facebook Pixel Code -->
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
 	<body class="landing is-preload">
@@ -107,6 +130,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Inicio</a></li>
+							<li><a href="precios.html">Precios</a></li>
 							<li>
 								<a href="#" class="icon solid fa-angle-down">Servicios</a>
 								<ul>
@@ -138,46 +162,46 @@
 						
 						<header style="margin-bottom: 2em;">
 							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Instalación eléctrica en casas y pisos en Valencia</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Si vas a reformar tu casa o necesitas cambiar los cables viejos, hacemos toda la instalación eléctrica nueva de forma rápida y limpia</p>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Si vas a reformar tu casa o necesitas cambiar los cables viejos, hacemos toda la instalación eléctrica nueva de forma rápida y limpia.</p>
 						</header>
 
-						<!-- БЛОК 1 -->
+						<!-- BLOQUE 1 -->
 						<div class="content-block">
 							<span class="image left"><img src="images/cableado_1.webp" alt="Cambiar cables antiguos en Valencia" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Cuándo hay que cambiar los cables?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Si los cables son muy viejos, de tela o están quemados</li>
-									<li style="margin-bottom: 10px;">Si vas a hacer una reforma integral en la cocina o el baño</li>
-									<li style="margin-bottom: 10px;">Si te faltan enchufes en las habitaciones y usas muchas regletas</li>
-									<li style="margin-bottom: 10px;">Si los cables se calientan al enchufar el horno o la estufa</li>
+									<li style="margin-bottom: 10px;">Si los cables son muy viejos, de tela o están quemados.</li>
+									<li style="margin-bottom: 10px;">Si vas a hacer una reforma integral en la cocina o el baño.</li>
+									<li style="margin-bottom: 10px;">Si te faltan enchufes en las habitaciones y usas muchas regletas.</li>
+									<li style="margin-bottom: 10px;">Si los cables se calientan al enchufar el horno o la estufa.</li>
 								</ul>
 							</div>
 						</div>
 
-						<!-- БЛОК 2 -->
+						<!-- BLOQUE 2 -->
 						<div class="content-block">
 							<span class="image left"><img src="images/enchufe.webp" alt="Poner enchufes nuevos y hacer rozas" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Qué hacemos en tu casa?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Tiramos líneas nuevas para el aire acondicionado o la vitrocerámica</li>
-									<li style="margin-bottom: 10px;">Hacemos rozas en la pared para esconder los tubos y cables</li>
-									<li style="margin-bottom: 10px;">Ponemos enchufes nuevos, interruptores y sacamos puntos de luz</li>
-									<li style="margin-bottom: 10px;">Comprobamos que toda la instalación sea segura y no dé calambres</li>
+									<li style="margin-bottom: 10px;">Tiramos líneas nuevas para el aire acondicionado o la vitrocerámica.</li>
+									<li style="margin-bottom: 10px;">Hacemos rozas en la pared para esconder los tubos y cables.</li>
+									<li style="margin-bottom: 10px;">Ponemos enchufes nuevos, interruptores y sacamos puntos de luz.</li>
+									<li style="margin-bottom: 10px;">Comprobamos que toda la instalación sea segura y no dé calambres.</li>
 								</ul>
 							</div>
 						</div>
 
-						<!-- БЛОК 3 -->
+						<!-- BLOQUE 3 -->
 						<div class="content-block" style="margin-bottom: 0 !important;">
 							<span class="image left"><img src="images/cableado_3.webp" alt="Instalación eléctrica terminada" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Trabajo limpio y garantizado</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
-									Usamos cables y materiales de buena calidad para que no tengas problemas en el futuro. <br /> Todo se hace cumpliendo la normativa <strong>REBT</strong><br />
-									Te dejamos la instalación lista para usar y totalmente segura para tu familia<br />
-									Escríbenos por WhatsApp o llámanos para pedir presupuesto sin compromiso
+									Usamos cables y materiales de buena calidad para que no tengas problemas en el futuro. Todo se hace cumpliendo la normativa <strong>REBT</strong>.<br />
+									Te dejamos la instalación lista para usar и totalmente segura para tu familia.<br />
+									Escríbenos por WhatsApp o llámanos para pedir presupuesto sin compromiso.
 								</p>
 							</div>
 						</div>
@@ -224,7 +248,6 @@
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
 
-		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
 		<script>
 			window.addEventListener('load', function() {
 				setTimeout(function() {
