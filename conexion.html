@@ -7,15 +7,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<!-- PRECARGA DE IMAGEN PRINCIPAL (LCP) -->
 		<link rel="preload" as="image" href="images/banner3.webp" fetchpriority="high" />
 
-		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<!-- PRECARGA DE FUENTES -->
 		<link rel="preload" as="font" href="assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
 		<link rel="preload" as="font" href="assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
 
 		<!-- SEO: Title y Canonical -->
-		<title>Enganches de Luz y Acometidas en Valencia | Instalador Autorizado</title>
+		<title>Enganches de Luz y Acometidas en Valencia | Instalador Autorizado | AmperioR</title>
 		<link rel="canonical" href="https://amperior.es/conexion.html" />
 		
 		<link rel="icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
@@ -28,7 +28,7 @@
 		<!-- Open Graph -->
 		<meta property="og:title" content="Enganches de Luz y Acometidas en Valencia | Instalador Autorizado" />
 		<meta property="og:description" content="¿Necesitas dar de alta la luz o hacer un enganche nuevo en Valencia? Instalamos acometidas, contadores y preparamos todo para Iberdrola." />
-		<meta property="og:image" content="https://amperior.es/images/diagnostica_1.webp" />
+		<meta property="og:image" content="https://amperior.es/images/conexion.webp" />
 		<meta property="og:url" content="https://amperior.es/conexion.html" />
 		<meta property="og:type" content="website" />
 
@@ -37,14 +37,39 @@
 		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/conexion.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/conexion.html" />
 
-		<!-- Асинхронная загрузка шрифтов -->
+		<!-- MICRODATOS JSON-LD PARA GOOGLE -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Electrician",
+		  "name": "AmperioR",
+		  "url": "https://amperior.es/conexion.html",
+		  "telephone": "+34624638089",
+		  "image": "https://amperior.es/images/conexion.webp",
+		  "description": "¿Necesitas dar de alta la luz o hacer un enganche nuevo en Valencia? Instalamos acometidas, contadores y preparamos todo para Iberdrola.",
+		  "address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Valencia",
+			"addressRegion": "Valencia",
+			"addressCountry": "ES"
+		  },
+		  "areaServed": [
+			"Valencia", "Cullera", "Carcaixent", "Chiva", "Silla", "Puerto de Sagunto", "Gandía", "Godella", "Alboraya", "Burjassot", "Torrent", "Llíria", "Oliva", "Calicanto", "Xeraco", "Xàtiva", "Sagunto", "Alzira", "Tavernes de la Valldigna", "Algemesí"
+		  ],
+		  "sameAs": [
+			"https://www.instagram.com/amperior.es/",
+			"https://wa.me/34624638089",
+			"https://www.youtube.com/@Egor_Amperior"
+		  ]
+		}
+		</script>
+
+		<!-- FUENTES -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" media="print" onload="this.media='all'" />
-		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /></noscript>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
-		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ (С ИСПРАВЛЕНИЕМ ДЛЯ МОБИЛЬНЫХ) -->
+		<!-- BLOQUE DE ESTILOS -->
 		<style>
 			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
 			#header { background-color: rgb(23, 78, 98) !important; }
@@ -77,7 +102,6 @@
 			}
 		</style>
 
-		<!-- ПРАВИЛЬНЫЙ ПОРЯДОК: CSS ДОЛЖЕН БЫТЬ СТРОГО ПОСЛЕ БЛОКА <style> -->
 		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
@@ -95,7 +119,6 @@
 		fbq('track', 'PageView');
 		</script>
 		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
-		<!-- End Facebook Pixel Code -->
 		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
 	</head>
 	<body class="landing is-preload">
@@ -138,7 +161,7 @@
 						
 						<header style="margin-bottom: 2em;">
 							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Acometidas y enganches de luz en Valencia</h2>
-							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Hacemos todo el trabajo necesario para conectar tu casa, chalet o local a la red eléctrica de la calle para que puedas tener luz sin problemas</p>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Hacemos todo el trabajo necesario para conectar tu casa, chalet o local a la red eléctrica de la calle para que puedas tener luz sin problemas.</p>
 						</header>
 
 						<!-- БЛОК 1 -->
@@ -147,10 +170,10 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Cuándo necesitas un enganche nuevo?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Si estás construyendo una casa nueva o abriendo un local desde cero</li>
-									<li style="margin-bottom: 10px;">Si vas a dividir un piso o local en varios independientes</li>
-									<li style="margin-bottom: 10px;">Si el cable que viene de la calle (acometida) es muy viejo o está roto</li>
-									<li style="margin-bottom: 10px;">Si Iberdrola te obliga a sacar el contador a la fachada o cambiarlo de sitio</li>
+									<li style="margin-bottom: 10px;">Si estás construyendo una casa nueva o abriendo un local desde cero.</li>
+									<li style="margin-bottom: 10px;">Si vas a dividir un piso o local en varios independientes.</li>
+									<li style="margin-bottom: 10px;">Si el cable que viene de la calle (acometida) es muy viejo o está roto.</li>
+									<li style="margin-bottom: 10px;">Si Iberdrola te obliga a sacar el contador a la fachada o cambiarlo de sitio.</li>
 								</ul>
 							</div>
 						</div>
@@ -161,10 +184,10 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">¿Qué hacemos exactamente?</h3>
 								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
-									<li style="margin-bottom: 10px;">Metemos el cableado nuevo desde la calle hasta tu casa (acometidas)</li>
-									<li style="margin-bottom: 10px;">Instalamos la caja del contador y las protecciones generales (CGP)</li>
-									<li style="margin-bottom: 10px;">Dejamos todo preparado según lo que pide la compañía eléctrica</li>
-									<li style="margin-bottom: 10px;">Hablamos con Iberdrola o tu distribuidora para agilizar el alta de la luz</li>
+									<li style="margin-bottom: 10px;">Metemos el cableado nuevo desde la calle hasta tu casa (acometidas).</li>
+									<li style="margin-bottom: 10px;">Instalamos la caja del contador и las protecciones generales (CGP).</li>
+									<li style="margin-bottom: 10px;">Dejamos todo preparado según lo que pide la compañía eléctrica.</li>
+									<li style="margin-bottom: 10px;">Hablamos con Iberdrola o tu distribuidora для agilizar el alta de la luz.</li>
 								</ul>
 							</div>
 						</div>
@@ -175,9 +198,9 @@
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Trabajo legal y sin dolores de cabeza</h3>
 								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
-									Hacemos la instalación cumpliendo la normativa <strong>REBT</strong> para que la compañía no te ponga pegas<br />
-									Te dejamos el contador listo y te ayudamos a conseguir el contrato de luz rápido<br />
-									Escríbenos por WhatsApp o llámanos para ver tu caso
+									Hacemos la instalación cumpliendo la normativa <strong>REBT</strong> para que la compañía no te ponga pegas.<br />
+									Te dejamos el contador listo и te ayudamos a conseguir el contrato de luz rápido.<br />
+									Escríbenos por WhatsApp o llámanos для ver tu caso.
 								</p>
 							</div>
 						</div>
@@ -224,7 +247,6 @@
 			<span class="icon brands fa-whatsapp"></span>
 		</a>
 
-		<!-- ИСПРАВЛЕНО: Доступность мобильного меню для Google -->
 		<script>
 			window.addEventListener('load', function() {
 				setTimeout(function() {
