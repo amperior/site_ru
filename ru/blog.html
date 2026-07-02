@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ПЕРВОЙ КАРТИНКИ (LCP) -->
-		<link rel="preload" as="image" href="../images/blog-cable.webp" fetchpriority="high" />
+		<link rel="preload" as="image" href="../images/blog-uzo.webp" fetchpriority="high" />
 
 		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
 		<link rel="preload" as="font" href="../assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
@@ -23,18 +23,18 @@
 		<link rel="apple-touch-icon" href="https://amperior.es/apple-touch-icon.png">
 		<link rel="manifest" href="/site.webmanifest?v=3">
 		<meta name="theme-color" content="#174e62">
-		<meta name="description" content="Полезные статьи, инструкции и советы по электрике, электромонтажу, нормам REBT и оформлению документов в Валенсии от специалистов AmperioR." />
+		<meta name="description" content="Устранение неполадок, ремонт электропроводки, повышение мощности, диагностика и подключение к электросети в Валенсии от специалистов AmperioR." />
 		
 		<!-- Open Graph -->
 		<meta property="og:title" content="Блог и полезные советы электрика в Валенсии | AmperioR" />
-		<meta property="og:description" content="Полезные статьи, инструкции и советы по электрике, электромонтажу, нормам REBT и оформлению документов в Валенсии от специалистов AmperioR." />
-		<meta property="og:image" content="https://amperior.es/images/blog-cable.webp" />
+		<meta property="og:description" content="Устранение неполадок, ремонт электропроводки, повышение мощности, диагностика и подключение к электросети в Валенсии от специалистов AmperioR." />
+		<meta property="og:image" content="https://amperior.es/images/blog-uzo.webp" />
 		<meta property="og:url" content="https://amperior.es/ru/blog.html" />
 		<meta property="og:type" content="website" />
 
 		<!-- SEO: hreflang -->
 		<link rel="alternate" hreflang="es" href="https://amperior.es/blog.html" />
-		<link lang="ru" rel="alternate" hreflang="ru" href="https://amperior.es/ru/blog.html" />
+		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/blog.html" />
 		<link rel="alternate" hreflang="x-default" href="https://amperior.es/blog.html" />
 
 		<!-- МИКРОРАЗМЕТКА ДЛЯ СПИСКА СТАТЕЙ (SCHEMA.ORG BLOG) -->
@@ -44,7 +44,7 @@
 		  "@type": "Blog",
 		  "name": "Блог AmperioR",
 		  "url": "https://amperior.es/ru/blog.html",
-		  "description": "Полезные статьи, инструкции и советы по электрике, электромонтажу, нормам REBT и оформлению документов в Валенсии.",
+		  "description": "Устранение неполадок, ремонт электропроводки, повышение мощности, диагностика и подключение к электросети в Валенсии от специалистов AmperioR.",
 		  "publisher": {
 			"@type": "Organization",
 			"name": "AmperioR",
@@ -54,6 +54,13 @@
 			}
 		  },
 		  "blogPost": [
+			{
+			  "@type": "BlogPosting",
+			  "headline": "Почему выбивает УЗО: причины и диагностика",
+			  "url": "https://amperior.es/ru/salta-diferencial.html",
+			  "image": "https://amperior.es/images/blog-uzo.webp",
+			  "description": "Пошаговое руководство по самостоятельному поиску причин срабатывания устройства защитного отключения (дифференциального автомата) в бытовой электросети."
+			},
 			{
 			  "@type": "BlogPosting",
 			  "headline": "Как выбрать сечение кабеля для проводки",
@@ -67,13 +74,6 @@
 			  "url": "https://amperior.es/ru/que-es-boletin.html",
 			  "image": "https://amperior.es/images/blog-boletin.webp",
 			  "description": "Разбираем, в каких случаях Iberdrola требует белый или синий сертификат электрика в Валенсии."
-			},
-			{
-			  "@type": "BlogPosting",
-			  "headline": "Почему выбивает УЗО: причины и диагностика",
-			  "url": "https://amperior.es/ru/salta-diferencial.html",
-			  "image": "https://amperior.es/images/blog-uzo.webp",
-			  "description": "Пошаговое руководство по самостоятельному поиску причин срабатывания устройства защитного отключения (дифференциального автомата) в бытовой электросети."
 			}
 		  ]
 		}
@@ -178,7 +178,21 @@
 							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Устранение неполадок, ремонт электропроводки, повышение мощности, диагностика и подключение к электросети в Валенсийском сообществе.</p>
 						</header>
 
-						<!-- БЛОК СТАТЬИ 1 -->
+						<!-- БЛОК СТАТЬИ 1 (ТЕПЕРЬ УЗО) -->
+						<div class="content-block">
+							<span class="image left"><img src="../images/blog-uzo.webp" alt="Поиск причин срабатывания УЗО в Валенсии" loading="lazy" width="800" height="450" style="height: auto;" /></span>
+							<div class="text-wrapper">
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Почему выбивает УЗО: причины и диагностика</h3>
+								<p style="font-size: 1.2em; color: #000; line-height: 1.5;">
+									Внезапное отключение электричества из-за сработки дифференциального автомата (diferencial) — частая проблема. Мы составили подробную пошаговую инструкцию по поиску утечки тока, которая поможет вам быстро выявить неисправный прибор дома без вызова мастера.
+								</p>
+								<ul class="actions" style="margin-top: 1em !important;">
+									<li><a href="salta-diferencial.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important; font-size: 0.95em; padding: 0 1.5em; height: 3em; line-height: 3em;">Читать статью</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- БЛОК СТАТЬИ 2 (КАБЕЛЬ) -->
 						<div class="content-block">
 							<span class="image left"><img src="../images/blog-cable.webp" alt="Выбор сечения медного кабеля для проводки" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
@@ -192,8 +206,8 @@
 							</div>
 						</div>
 
-						<!-- БЛОК СТАТЬИ 2 -->
-						<div class="content-block">
+						<!-- БЛОК СТАТЬИ 3 (BOLETÍN - ТЕПЕРЬ ПОСЛЕДНИЙ) -->
+						<div class="content-block" style="margin-bottom: 0 !important;">
 							<span class="image left"><img src="../images/blog-boletin.webp" alt="Оформление Boletin Electrico в Испании" loading="lazy" width="800" height="450" style="height: auto;" /></span>
 							<div class="text-wrapper">
 								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Что такое Boletín Eléctrico и когда он нужен</h3>
@@ -202,20 +216,6 @@
 								</p>
 								<ul class="actions" style="margin-top: 1em !important;">
 									<li><a href="que-es-boletin.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important; font-size: 0.95em; padding: 0 1.5em; height: 3em; line-height: 3em;">Читать статью</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- БЛОК СТАТЬИ 3 -->
-						<div class="content-block" style="margin-bottom: 0 !important;">
-							<span class="image left"><img src="../images/blog-uzo.webp" alt="Поиск причин срабатывания УЗО в Валенсии" loading="lazy" width="800" height="450" style="height: auto;" /></span>
-							<div class="text-wrapper">
-								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Почему выбивает УЗО: причины и диагностика</h3>
-								<p style="font-size: 1.2em; color: #000; line-height: 1.5;">
-									Внезапное отключение электричества из-за сработки дифференциального автомата (diferencial) — частая проблема. Мы составили подробную пошаговую инструкцию по поиску утечки тока, которая поможет вам быстро выявить неисправный прибор дома без вызова мастера.
-								</p>
-								<ul class="actions" style="margin-top: 1em !important;">
-									<li><a href="salta-diferencial.html" class="button alt" style="color: #000 !important; border-color: #ddd !important; text-transform: none !important; font-size: 0.95em; padding: 0 1.5em; height: 3em; line-height: 3em;">Читать статью</a></li>
 								</ul>
 							</div>
 						</div>
