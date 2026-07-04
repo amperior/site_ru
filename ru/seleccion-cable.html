@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP | Optimizado para AmperioR
+-->
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- ПРИОРИТЕТНАЯ ЗАГРУЗКА ГЛАВНОЙ КАРТИНКИ (LCP) -->
+		<link rel="preload" as="image" href="../images/blog-cable.webp" fetchpriority="high" />
+
+		<!-- ПРЕДЗАГРУЗКА ШРИФТОВ ИКОНОК -->
+		<link rel="preload" as="font" href="../assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" as="font" href="../assets/webfonts/fa-brands-400.woff2" type="font/woff2" crossorigin="anonymous" />
+
+		<!-- SEO: Title и Canonical -->
+		<title>Выбор сечения главного вводного кабеля: нормы и расчет | AmperioR</title>
+		<link rel="canonical" href="https://amperior.es/ru/seleccion-cable.html" />
+
+		<link rel="icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="https://amperior.es/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="https://amperior.es/apple-touch-icon.png">
+		<link rel="manifest" href="/site.webmanifest?v=3">
+		<meta name="theme-color" content="#174e62">
+		<meta name="description" content="Как правильно выбрать сечение вводного кабеля для квартиры или дома в Испании. Таблицы подбора сечения кабеля по мощности нагрузки и току по нормам REBT." />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content="Выбор сечения главного вводного кабеля: нормы и расчет | AmperioR" />
+		<meta property="og:description" content="Как правильно выбрать сечение вводного кабеля для квартиры или дома в Испании. Таблицы подбора сечения кабеля по мощности нагрузки и току по нормам REBT." />
+		<meta property="og:image" content="https://amperior.es/images/blog-cable.webp" />
+		<meta property="og:url" content="https://amperior.es/ru/seleccion-cable.html" />
+		<meta property="og:type" content="article" />
+
+		<!-- SEO: hreflang -->
+		<link rel="alternate" hreflang="es" href="https://amperior.es/seleccion-cable.html" />
+		<link rel="alternate" hreflang="ru" href="https://amperior.es/ru/seleccion-cable.html" />
+		<link rel="alternate" hreflang="x-default" href="https://amperior.es/seleccion-cable.html" />
+
+		<!-- МИКРОРАЗМЕТКА ДЛЯ СТАТЬИ (GOOGLE TECHARTICLE) -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "TechArticle",
+		  "headline": "Выбор сечения главного вводного кабеля: нормы и расчет",
+		  "image": "https://amperior.es/images/blog-cable.webp",
+		  "author": {
+			"@type": "Organization",
+			"name": "AmperioR"
+		  },
+		  "publisher": {
+			"@type": "Organization",
+			"name": "AmperioR",
+			"logo": {
+			  "@type": "ImageObject",
+			  "url": "https://amperior.es/favicon.ico"
+			}
+		  },
+		  "datePublished": "2026-06-28",
+		  "description": "Руководство по правильному выбору сечения главного вводного кабеля для жилых и коммерческих объектов в Испании в соответствии с регламентом REBT."
+		}
+		</script>
+
+		<!-- Асинхронная загрузка шрифтов -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+		
+		<!-- ОРИГИНАЛЬНЫЙ БЛОК СТИЛЕЙ -->
+		<style>
+			body, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif !important; }
+			#header { background-color: rgb(23, 78, 98) !important; }
+			#header.alt { background-color: transparent !important; box-shadow: none !important; }
+			
+			.container { width: 95% !important; max-width: 1200px !important; }
+			body.landing #main { margin-top: 0 !important; padding-top: 1.5em !important; }
+
+			.box { text-align: left !important; padding: 2.7em 2em 3em 2em !important; }
+
+			img { max-width: 100% !important; height: auto !important; display: block; }
+			.image.left { float: left !important; width: 350px !important; max-width: 45% !important; margin: 0.5em 2em 1.5em 0 !important; }
+			.text-wrapper { overflow: hidden !important; display: block !important; }
+			.content-block { clear: both !important; margin-bottom: 2em !important; }
+			h3 { margin-bottom: 0.85em !important; }
+
+			#nav > ul > li > a { color: #fff !important; font-family: 'Roboto', sans-serif !important; text-transform: none !important; font-weight: 500 !important; letter-spacing: 0 !important; }
+			.dropotron { min-width: 15em !important; max-width: 20em !important; padding: 0.5em 0 !important; }
+			.dropotron li a { text-transform: none !important; color: #000 !important; font-family: 'Roboto', sans-serif !important; white-space: normal !important; line-height: 1.3em !important; padding: 0.6em 1.2em !important; background: #fff !important; }
+			.dropotron li:hover > a { background: #f4f4f4 !important; }
+
+			@media screen and (max-width: 736px) {
+				.image.left { width: 100% !important; max-width: 100% !important; float: none !important; margin: 0 0 2em 0 !important; }
+				.image.left img { width: 100% !important; }
+				.box { padding: 2em !important; }
+			}
+			@media screen and (max-width: 480px) {
+				.box { padding: 3em 1em !important; }
+				.container { width: 100% !important; }
+			}
+		</style>
+
+		<link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1840828603280022');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1840828603280022&ev=PageView&noscript=1"/></noscript>
+		<meta name="facebook-domain-verification" content="dpcjidh4pnks5amtvf76e0w7c1ai2t" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<span class="logo"><a href="index.html">AmperioR</a></span>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Услуги</a>
+								<ul>
+									<li><a href="diagnostica.html">Диагностика и ремонт</a></li>
+									<li><a href="cuadros.html">Монтаж электрощитов</a></li>
+									<li><a href="cableado.html">Электропроводка</a></li>
+									<li><a href="locales.html" title="Электрика для коммерческих помещений">Локали и магазины</a></li>
+									<li><a href="conexion.html">Подключение к сети</a></li>
+									<li><a href="potencia.html">Повышение мощности</a></li>
+									<li><a href="boletin.html">Документы (Boletín)</a></li>
+								</ul>
+							</li>
+							<li><a href="../seleccion-cable.html" style="font-weight: bold;">ES</a></li>
+							<li><a href="tel:+34624638089" class="button">Вызвать мастера</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner" style="padding: 6em 15px; background: url('../images/banner3.webp') center/cover no-repeat !important;">
+					<h1 style="font-size: 2.8em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2;">Выбор сечения кабеля</h1>
+					<p style="font-size: 1.5em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.3;">Как правильно выбрать сечение главного вводного кабеля</p>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container" role="main">
+					<section class="box">
+						
+						<header style="margin-bottom: 2em;">
+							<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #000 !important; line-height: 1.2;">Выбор сечения вводного кабеля: правила, расчет и нормы REBT</h2>
+							<p style="font-size: 1.3em; color: #444; font-style: normal; border: none; line-height: 1.5; margin-top: 1em;">Выбор параметров главного вводного кабеля (Derivación Individual) — это ключевой шаг в обеспечении безопасности любого объекта. Разберемся, почему его сечение имеет решающее значение и как подобрать кабель по стандартам Испании.</p>
+						</header>
+
+						<!-- БЛОК 1 (С КАРТИНКОЙ СТАТЬИ) -->
+						<div class="content-block">
+							<span class="image left"><img src="../images/blog-cable.webp" alt="Выбор сечения вводного кабеля для квартиры" loading="lazy" width="800" height="450" style="height: auto;" /></span>
+							<div class="text-wrapper">
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Почему вводной кабель важнее внутренней проводки</h3>
+								<p style="font-size: 1.2em; color: #000; line-height: 1.5;">
+									Главный вводной кабель соединяет общедомовой счетчик электроэнергии (contador) с распределительным щитом внутри вашей квартиры или дома. Он переносит на себе абсолютно всю нагрузку от одновременно работающих электроприборов. Если его сечение окажется заниженным, кабель начнет сильно греться. Это приведет к падению напряжения на вводе, преждевременному разрушению изоляции и, в худшем случае, к пожару. Важно помнить: Iberdrola не позволит официально повысить мощность, если параметры кабеля не соответствуют стандартам.
+								</p>
+							</div>
+						</div>
+
+						<!-- БЛОК 2 (БЕЗ КАРТИНКИ ДЛЯ ЛЕГКОСТИ СТРАНИЦЫ) -->
+						<div class="content-block">
+							<div class="text-wrapper" style="overflow: visible !important;">
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Стандартные сечения и номиналы токов по нормам REBT</h3>
+								<ul style="list-style: disc; padding-left: 1.5em; margin-top: 1em; font-size: 1.2em; color: #000;">
+									<li style="margin-bottom: 10px;"><strong>10 мм² (медь):</strong> Допускает максимальный ток до 50А (мощность до 11.5 кВт при однофазном вводе). Это современный минимальный стандарт в Испании для жилых помещений при стандартной замене ввода.</li>
+									<li style="margin-bottom: 10px;"><strong>16 мм² (медь):</strong> Допускает ток до 63А (мощность до 14.4 кВт). Рекомендуется при наличии мощных кондиционеров, индукционной плиты, проточных водонагревателей или зарядной станции для электромобиля.</li>
+									<li style="margin-bottom: 10px;"><strong>Тип кабеля (Libre de Halógenos):</strong> По нормам REBT вводной кабель должен быть строго безгалогенным (не распространяющим горение, тип ES07Z1-K или аналогичный) и проложен в гофротрубе определенного диаметра.</li>
+									<li style="margin-bottom: 10px;"><strong>Алюминиевые кабели:</strong> Из-за меньшей проводимости требуют сечения на одну-две ступени выше медных аналогов (минимум от 16 мм² или 25 мм²), что чаще применяется при воздушном вводе в частные дома.</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- БЛОК 3 (БЕЗ КАРТИНКИ) -->
+						<div class="content-block" style="margin-bottom: 0 !important;">
+							<div class="text-wrapper">
+								<h3 style="text-transform: none; font-weight: 500; color: #000 !important;">Как самостоятельно оценить достаточность сечения</h3>
+								<p style="font-size: 1.2em; color: #000; margin: 0; line-height: 1.5;">
+									<strong>1. Проверьте вводной автомат (IGA):</strong> Найдите в вашем распределительном щите главный автоматический выключатель. Если на нем написано C40 (номинал 40 Ампер), то сечение медного вводного кабеля должно быть не менее 10 мм². Если IGA на 50А или 63А — строго 16 мм².<br /><br />
+									<strong>2. Учитывайте длину линии:</strong> Если счетчик находится далеко (например, в подвале многоэтажного дома или на границе участка), сечение приходится увеличивать из-за потерь напряжения на большой протяженности линии.<br /><br />
+									<strong>3. Запас на будущее:</strong> Если планируется установка солнечных панелей, мощной системы кондиционирования или зарядки для машины — закладывайте медный кабель сечением 16 мм². Это избавит вас от дорогостоящей переделки ввода в будущем.<br /><br />
+									Если вам требуется квалифицированная оценка состояния ввода, свяжитесь с электриком в WhatsApp или позвоните. Специалист <strong>AmperioR</strong> проведет профессиональную диагностику вашей проводки по стандартам REBT с использованием специальных измерительных приборов. Мастер даст точное заключение о состоянии имеющейся линии и предложит пути решения.<br /><br />
+
+									ОПЫТ ПОКАЗЫВАЕТ: при покупке старой недвижимости в Валенсии вводной кабель часто оказывается сечением всего 6 мм² (или даже 4 мм²). Такой кабель физически не позволит вам официально повысить мощность (potencia contratada) даже до средних 5.75 кВт. Для безопасной эксплуатации жилья и успешного прохождения проверки компании Iberdrola необходима полная замена ввода. Обратитесь в **AmperioR** — мы поможем рассчитать необходимую нагрузку, перетянуть вводной кабель и оформить сертификат Boletín Eléctrico под ключ.
+								</p>
+							</div>
+						</div>
+
+					</section>
+				</section>
+
+			<!-- CTA + Footer Wrapper -->
+			<div style="background: url('../images/banner3.webp') center/cover no-repeat !important; margin-top: 0 !important;">
+				<section id="cta" style="background: transparent !important; padding: 4em 15px 2em 15px; box-shadow: none !important; border: none !important; margin-bottom: 0 !important;">
+					<h2 style="font-size: 2.2em; text-transform: none; font-weight: 500; color: #fff !important; line-height: 1.2; margin-bottom: 1em;">Нужно решить проблему?</h2>
+					<ul class="actions special">
+						<li><a href="tel:+34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">Позвонить</a></li>
+						<li><a href="https://wa.me/34624638089" class="button" style="background-color: #fff !important; color: #000 !important; border: none !important; box-shadow: none !important;">WhatsApp</a></li>
+					</ul>
+				</section>
+
+				<footer id="footer" style="background: transparent !important; padding: 0 0 4em 0; color: #fff !important; border-top: none !important; box-shadow: none !important; margin-top: 0 !important;">
+					<ul class="icons">
+						<li><a href="#" aria-label="Facebook" class="icon brands fa-facebook-f" style="color: #1877F2 !important; opacity: 1 !important;"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/amperior.es/" aria-label="Instagram" class="icon brands fa-instagram" style="color: #E1306C !important; opacity: 1 !important;"><span class="label">Instagram</span></a></li>
+						<li><a href="https://wa.me/34624638089" aria-label="WhatsApp" class="icon brands fa-whatsapp" style="color: #25D366 !important; opacity: 1 !important;"><span class="label">WhatsApp</span></a></li>
+					</ul>
+					<ul class="copyright" style="list-style: none; padding: 0; color: #fff !important;">
+						<li>&copy; AmperioR.es. Все права защищены</li>
+						<li style="display: block; margin-top: 1.5em; font-size: 0.75em; text-transform: none; line-height: 1.6em; color: #fff !important; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-left: none !important; padding-left: 0 !important;">
+							<strong style="color: #fff !important;">Защита данных:</strong><br />
+							В соответствии с RGPD и LOPDGDD, сообщаем вам, что AmperioR.es обрабатывает ваши данные для управления вашими запросами. Правовой основой является ваше согласие. Данные не будут передаваться третьим лицам. Вы имеете право на доступ, исправление и удаление данных, связавшись с нами.
+						</li>
+					</ul>
+				</footer>
+			</div>
+
+		</div>
+		<script defer src="../assets/js/jquery.min.js"></script>
+		<script defer src="../assets/js/jquery.dropotron.min.js"></script>
+		<script defer src="../assets/js/jquery.scrollex.min.js"></script>
+		<script defer src="../assets/js/browser.min.js"></script>
+		<script defer src="../assets/js/breakpoints.min.js"></script>
+		<script defer src="../assets/js/util.js"></script>
+		<script defer src="../assets/js/main.js"></script>
+		
+		<a href="https://wa.me/34624638089" aria-label="WhatsApp" style="position:fixed; width:66px; height:66px; bottom:30px; right:20px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:42px; box-shadow: 2px 2px 3px #999; z-index:100; display: flex; align-items: center; justify-content: center; text-decoration: none;" target="_blank">
+			<span class="icon brands fa-whatsapp"></span>
+		</a>
+
+		<script>
+			window.addEventListener('load', function() {
+				setTimeout(function() {
+					var navBtn = document.querySelector('#navButton .toggle');
+					if (navBtn) navBtn.setAttribute('aria-label', 'Menú');
+				}, 500);
+			});
+		</script>
+	</body>
+</html>
